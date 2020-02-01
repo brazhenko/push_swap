@@ -1,0 +1,2 @@
+/usr/bin/ar qc libpush_swap_lib.a  CMakeFiles/push_swap_lib.dir/push_swap_lib/pushswap.c.o CMakeFiles/push_swap_lib.dir/push_swap_lib/game_wrapper.c.o
+/usr/bin/ranlib libpush_swap_lib.a

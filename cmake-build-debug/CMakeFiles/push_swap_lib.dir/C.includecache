@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/a17641238/CLionProjects/push/push_swap_lib/game_wrapper.c
+pushswap.h
+/Users/a17641238/CLionProjects/push/push_swap_lib/pushswap.h
+stdio.h
+-
+
+/Users/a17641238/CLionProjects/push/push_swap_lib/pushswap.c
+pushswap.h
+/Users/a17641238/CLionProjects/push/push_swap_lib/pushswap.h
+stdlib.h
+-
+stdio.h
+-
+string.h
+-
+stdlib.h
+-
+
+/Users/a17641238/CLionProjects/push/push_swap_lib/pushswap.h
+stddef.h
+-
+stdint.h
+-
+
