@@ -1,22 +1,51 @@
 #include <stdio.h>
 #include "push_swap_lib/pushswap.h"
+#include "utilities.h"
+#include <stdlib.h>
+#include <string.h>
+#include <unistd.h>
+#include "sorter.h"
 
-int main(void)
+static void		error_exit(void)
 {
-	stack_push(stack_a(), 8);
-	stack_push(stack_a(), 5);
-	stack_push(stack_a(), 6);
-	stack_push(stack_a(), 3);
-	stack_push(stack_a(), 1);
-	stack_push(stack_a(), 2);
-	show();
-	sa();
-	show();
-	pb();pb();pb();
-	show();
-	sa();
-	show();
-	pa();pa();pa();
-	show();
-	kill();
+	write(STDERR_FILENO, "Error\n", 6);
+	exit(EXIT_FAILURE);
+}
+
+int 	valid(char *arg, int *num)
+{
+	int 	tmp;
+	char	*tmp_s;
+	tmp = ft_atoi(arg);
+	tmp_s = ft_itoa(tmp);
+	if (strcmp(tmp_s, arg) == 0 && !is_there_(stack_a(), tmp))
+	{
+		*num = tmp;
+		free(tmp_s);
+		return (1);
+	}
+	free(tmp_s);
+	return (0);
+}
+
+int main(int ac, char **av)
+{
+	size_t 	i;
+	int 	value;
+
+	if (ac > 1)
+	{
+		i = ac - 1;
+		while (i)
+		{
+			if (valid(av[i], &value))
+				stack_push(stack_a(), atoi(av[i]));
+			else
+				error_exit();
+			i--;
+		}
+		show();
+		sort();
+		kill();
+	}
 }

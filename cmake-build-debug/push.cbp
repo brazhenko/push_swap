@@ -170,13 +170,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/lreznak-/Documents/push_swap/checker/checker.h">
-			<Option target="push"/>
-		</Unit>
-		<Unit filename="/Users/lreznak-/Documents/push_swap/checker/error.c">
-			<Option target="push"/>
-		</Unit>
-		<Unit filename="/Users/lreznak-/Documents/push_swap/checker/main.c">
+		<Unit filename="/Users/lreznak-/Documents/push_swap/main.c">
 			<Option target="push"/>
 		</Unit>
 		<Unit filename="/Users/lreznak-/Documents/push_swap/push_swap_lib/game_wrapper.c">
@@ -187,6 +181,12 @@
 		</Unit>
 		<Unit filename="/Users/lreznak-/Documents/push_swap/push_swap_lib/pushswap.h">
 			<Option target="push_swap_lib"/>
+		</Unit>
+		<Unit filename="/Users/lreznak-/Documents/push_swap/sort.c">
+			<Option target="push"/>
+		</Unit>
+		<Unit filename="/Users/lreznak-/Documents/push_swap/sorter.h">
+			<Option target="push"/>
 		</Unit>
 		<Unit filename="/Users/lreznak-/Documents/push_swap/utilities/ft_atoi.c">
 			<Option target="utlib"/>

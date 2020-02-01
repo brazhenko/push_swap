@@ -149,59 +149,32 @@ push_swap_lib/fast:
 	$(MAKE) -f CMakeFiles/push_swap_lib.dir/build.make CMakeFiles/push_swap_lib.dir/build
 .PHONY : push_swap_lib/fast
 
-checker/error.o: checker/error.c.o
+main.o: main.c.o
 
-.PHONY : checker/error.o
-
-# target to build an object file
-checker/error.c.o:
-	$(MAKE) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/checker/error.c.o
-.PHONY : checker/error.c.o
-
-checker/error.i: checker/error.c.i
-
-.PHONY : checker/error.i
-
-# target to preprocess a source file
-checker/error.c.i:
-	$(MAKE) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/checker/error.c.i
-.PHONY : checker/error.c.i
-
-checker/error.s: checker/error.c.s
-
-.PHONY : checker/error.s
-
-# target to generate assembly for a file
-checker/error.c.s:
-	$(MAKE) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/checker/error.c.s
-.PHONY : checker/error.c.s
-
-checker/main.o: checker/main.c.o
-
-.PHONY : checker/main.o
+.PHONY : main.o
 
 # target to build an object file
-checker/main.c.o:
-	$(MAKE) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/checker/main.c.o
-.PHONY : checker/main.c.o
+main.c.o:
+	$(MAKE) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/main.c.o
+.PHONY : main.c.o
 
-checker/main.i: checker/main.c.i
+main.i: main.c.i
 
-.PHONY : checker/main.i
+.PHONY : main.i
 
 # target to preprocess a source file
-checker/main.c.i:
-	$(MAKE) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/checker/main.c.i
-.PHONY : checker/main.c.i
+main.c.i:
+	$(MAKE) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/main.c.i
+.PHONY : main.c.i
 
-checker/main.s: checker/main.c.s
+main.s: main.c.s
 
-.PHONY : checker/main.s
+.PHONY : main.s
 
 # target to generate assembly for a file
-checker/main.c.s:
-	$(MAKE) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/checker/main.c.s
-.PHONY : checker/main.c.s
+main.c.s:
+	$(MAKE) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/main.c.s
+.PHONY : main.c.s
 
 push_swap_lib/game_wrapper.o: push_swap_lib/game_wrapper.c.o
 
@@ -256,6 +229,33 @@ push_swap_lib/pushswap.s: push_swap_lib/pushswap.c.s
 push_swap_lib/pushswap.c.s:
 	$(MAKE) -f CMakeFiles/push_swap_lib.dir/build.make CMakeFiles/push_swap_lib.dir/push_swap_lib/pushswap.c.s
 .PHONY : push_swap_lib/pushswap.c.s
+
+sort.o: sort.c.o
+
+.PHONY : sort.o
+
+# target to build an object file
+sort.c.o:
+	$(MAKE) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/sort.c.o
+.PHONY : sort.c.o
+
+sort.i: sort.c.i
+
+.PHONY : sort.i
+
+# target to preprocess a source file
+sort.c.i:
+	$(MAKE) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/sort.c.i
+.PHONY : sort.c.i
+
+sort.s: sort.c.s
+
+.PHONY : sort.s
+
+# target to generate assembly for a file
+sort.c.s:
+	$(MAKE) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/sort.c.s
+.PHONY : sort.c.s
 
 utilities/ft_atoi.o: utilities/ft_atoi.c.o
 
@@ -322,18 +322,18 @@ help:
 	@echo "... edit_cache"
 	@echo "... utlib"
 	@echo "... push_swap_lib"
-	@echo "... checker/error.o"
-	@echo "... checker/error.i"
-	@echo "... checker/error.s"
-	@echo "... checker/main.o"
-	@echo "... checker/main.i"
-	@echo "... checker/main.s"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 	@echo "... push_swap_lib/game_wrapper.o"
 	@echo "... push_swap_lib/game_wrapper.i"
 	@echo "... push_swap_lib/game_wrapper.s"
 	@echo "... push_swap_lib/pushswap.o"
 	@echo "... push_swap_lib/pushswap.i"
 	@echo "... push_swap_lib/pushswap.s"
+	@echo "... sort.o"
+	@echo "... sort.i"
+	@echo "... sort.s"
 	@echo "... utilities/ft_atoi.o"
 	@echo "... utilities/ft_atoi.i"
 	@echo "... utilities/ft_atoi.s"
