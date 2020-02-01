@@ -48,5 +48,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/push.dir/DependInfo.cmake"
+  "CMakeFiles/utlib.dir/DependInfo.cmake"
   "CMakeFiles/push_swap_lib.dir/DependInfo.cmake"
   )

@@ -160,3 +160,17 @@ void	stack_print(t_pstack *stack)
 	}
 	printf("\n");
 }
+
+int		is_there_(t_pstack *stack, PSTACK_TYPE el)
+{
+	size_t		i;
+
+	i = 0;
+	while (i < stack->size)
+	{
+		if (stack->stack[i] == el)
+			return (1);
+		i++;
+	}
+	return (0);
+}

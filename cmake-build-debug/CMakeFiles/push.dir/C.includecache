@@ -6,17 +6,29 @@
 
 #IncludeRegexTransform: 
 
-/Users/a17641238/CLionProjects/push/checker/main.c
+../utilities/utilities.h
+
+/Users/lreznak-/Documents/push_swap/checker/checker.h
+
+/Users/lreznak-/Documents/push_swap/checker/main.c
 ../push_swap_lib/pushswap.h
-/Users/a17641238/CLionProjects/push/push_swap_lib/pushswap.h
+/Users/lreznak-/Documents/push_swap/push_swap_lib/pushswap.h
 stddef.h
 -
 stdio.h
 -
 stdlib.h
 -
+string.h
+-
+zconf.h
+-
+utilities.h
+/Users/lreznak-/Documents/push_swap/checker/utilities.h
+checker.h
+/Users/lreznak-/Documents/push_swap/checker/checker.h
 
-/Users/a17641238/CLionProjects/push/push_swap_lib/pushswap.h
+/Users/lreznak-/Documents/push_swap/push_swap_lib/pushswap.h
 stddef.h
 -
 stdint.h

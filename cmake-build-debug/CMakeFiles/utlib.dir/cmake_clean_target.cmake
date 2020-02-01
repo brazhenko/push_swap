@@ -1,3 +1,3 @@
 file(REMOVE_RECURSE
-  "libSTATIC.a"
+  "libutlib.a"
 )

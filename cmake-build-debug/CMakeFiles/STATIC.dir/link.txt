@@ -1,2 +1,0 @@
-/usr/bin/ar qc libSTATIC.a  CMakeFiles/STATIC.dir/push_swap_lib/pushswap.c.o
-/usr/bin/ranlib libSTATIC.a

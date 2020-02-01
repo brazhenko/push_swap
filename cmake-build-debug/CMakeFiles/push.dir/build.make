@@ -43,10 +43,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/a17641238/CLionProjects/push
+CMAKE_SOURCE_DIR = /Users/lreznak-/Documents/push_swap
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/a17641238/CLionProjects/push/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/lreznak-/Documents/push_swap/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/push.dir/depend.make
@@ -59,29 +59,45 @@ include CMakeFiles/push.dir/flags.make
 
 CMakeFiles/push.dir/checker/main.c.o: CMakeFiles/push.dir/flags.make
 CMakeFiles/push.dir/checker/main.c.o: ../checker/main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/a17641238/CLionProjects/push/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/push.dir/checker/main.c.o"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/push.dir/checker/main.c.o   -c /Users/a17641238/CLionProjects/push/checker/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lreznak-/Documents/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/push.dir/checker/main.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/push.dir/checker/main.c.o   -c /Users/lreznak-/Documents/push_swap/checker/main.c
 
 CMakeFiles/push.dir/checker/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/push.dir/checker/main.c.i"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/a17641238/CLionProjects/push/checker/main.c > CMakeFiles/push.dir/checker/main.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/lreznak-/Documents/push_swap/checker/main.c > CMakeFiles/push.dir/checker/main.c.i
 
 CMakeFiles/push.dir/checker/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/push.dir/checker/main.c.s"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/a17641238/CLionProjects/push/checker/main.c -o CMakeFiles/push.dir/checker/main.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/lreznak-/Documents/push_swap/checker/main.c -o CMakeFiles/push.dir/checker/main.c.s
+
+CMakeFiles/push.dir/checker/error.c.o: CMakeFiles/push.dir/flags.make
+CMakeFiles/push.dir/checker/error.c.o: ../checker/error.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lreznak-/Documents/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/push.dir/checker/error.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/push.dir/checker/error.c.o   -c /Users/lreznak-/Documents/push_swap/checker/error.c
+
+CMakeFiles/push.dir/checker/error.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/push.dir/checker/error.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/lreznak-/Documents/push_swap/checker/error.c > CMakeFiles/push.dir/checker/error.c.i
+
+CMakeFiles/push.dir/checker/error.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/push.dir/checker/error.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/lreznak-/Documents/push_swap/checker/error.c -o CMakeFiles/push.dir/checker/error.c.s
 
 # Object files for target push
 push_OBJECTS = \
-"CMakeFiles/push.dir/checker/main.c.o"
+"CMakeFiles/push.dir/checker/main.c.o" \
+"CMakeFiles/push.dir/checker/error.c.o"
 
 # External object files for target push
 push_EXTERNAL_OBJECTS =
 
 push: CMakeFiles/push.dir/checker/main.c.o
+push: CMakeFiles/push.dir/checker/error.c.o
 push: CMakeFiles/push.dir/build.make
 push: libpush_swap_lib.a
+push: libutlib.a
 push: CMakeFiles/push.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/a17641238/CLionProjects/push/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable push"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/lreznak-/Documents/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable push"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/push.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -94,6 +110,6 @@ CMakeFiles/push.dir/clean:
 .PHONY : CMakeFiles/push.dir/clean
 
 CMakeFiles/push.dir/depend:
-	cd /Users/a17641238/CLionProjects/push/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/a17641238/CLionProjects/push /Users/a17641238/CLionProjects/push /Users/a17641238/CLionProjects/push/cmake-build-debug /Users/a17641238/CLionProjects/push/cmake-build-debug /Users/a17641238/CLionProjects/push/cmake-build-debug/CMakeFiles/push.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/lreznak-/Documents/push_swap/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/lreznak-/Documents/push_swap /Users/lreznak-/Documents/push_swap /Users/lreznak-/Documents/push_swap/cmake-build-debug /Users/lreznak-/Documents/push_swap/cmake-build-debug /Users/lreznak-/Documents/push_swap/cmake-build-debug/CMakeFiles/push.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/push.dir/depend
 

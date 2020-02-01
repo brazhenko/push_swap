@@ -48,10 +48,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/a17641238/CLionProjects/push
+CMAKE_SOURCE_DIR = /Users/lreznak-/Documents/push_swap
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/a17641238/CLionProjects/push/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/lreznak-/Documents/push_swap/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/a17641238/CLionProjects/push/cmake-build-debug/CMakeFiles /Users/a17641238/CLionProjects/push/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lreznak-/Documents/push_swap/cmake-build-debug/CMakeFiles /Users/lreznak-/Documents/push_swap/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/a17641238/CLionProjects/push/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lreznak-/Documents/push_swap/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -124,6 +124,19 @@ push/fast:
 .PHONY : push/fast
 
 #=============================================================================
+# Target rules for targets named utlib
+
+# Build rule for target.
+utlib: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 utlib
+.PHONY : utlib
+
+# fast build rule for target.
+utlib/fast:
+	$(MAKE) -f CMakeFiles/utlib.dir/build.make CMakeFiles/utlib.dir/build
+.PHONY : utlib/fast
+
+#=============================================================================
 # Target rules for targets named push_swap_lib
 
 # Build rule for target.
@@ -135,6 +148,33 @@ push_swap_lib: cmake_check_build_system
 push_swap_lib/fast:
 	$(MAKE) -f CMakeFiles/push_swap_lib.dir/build.make CMakeFiles/push_swap_lib.dir/build
 .PHONY : push_swap_lib/fast
+
+checker/error.o: checker/error.c.o
+
+.PHONY : checker/error.o
+
+# target to build an object file
+checker/error.c.o:
+	$(MAKE) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/checker/error.c.o
+.PHONY : checker/error.c.o
+
+checker/error.i: checker/error.c.i
+
+.PHONY : checker/error.i
+
+# target to preprocess a source file
+checker/error.c.i:
+	$(MAKE) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/checker/error.c.i
+.PHONY : checker/error.c.i
+
+checker/error.s: checker/error.c.s
+
+.PHONY : checker/error.s
+
+# target to generate assembly for a file
+checker/error.c.s:
+	$(MAKE) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/checker/error.c.s
+.PHONY : checker/error.c.s
 
 checker/main.o: checker/main.c.o
 
@@ -217,16 +257,74 @@ push_swap_lib/pushswap.c.s:
 	$(MAKE) -f CMakeFiles/push_swap_lib.dir/build.make CMakeFiles/push_swap_lib.dir/push_swap_lib/pushswap.c.s
 .PHONY : push_swap_lib/pushswap.c.s
 
+utilities/ft_atoi.o: utilities/ft_atoi.c.o
+
+.PHONY : utilities/ft_atoi.o
+
+# target to build an object file
+utilities/ft_atoi.c.o:
+	$(MAKE) -f CMakeFiles/utlib.dir/build.make CMakeFiles/utlib.dir/utilities/ft_atoi.c.o
+.PHONY : utilities/ft_atoi.c.o
+
+utilities/ft_atoi.i: utilities/ft_atoi.c.i
+
+.PHONY : utilities/ft_atoi.i
+
+# target to preprocess a source file
+utilities/ft_atoi.c.i:
+	$(MAKE) -f CMakeFiles/utlib.dir/build.make CMakeFiles/utlib.dir/utilities/ft_atoi.c.i
+.PHONY : utilities/ft_atoi.c.i
+
+utilities/ft_atoi.s: utilities/ft_atoi.c.s
+
+.PHONY : utilities/ft_atoi.s
+
+# target to generate assembly for a file
+utilities/ft_atoi.c.s:
+	$(MAKE) -f CMakeFiles/utlib.dir/build.make CMakeFiles/utlib.dir/utilities/ft_atoi.c.s
+.PHONY : utilities/ft_atoi.c.s
+
+utilities/ft_itoa.o: utilities/ft_itoa.c.o
+
+.PHONY : utilities/ft_itoa.o
+
+# target to build an object file
+utilities/ft_itoa.c.o:
+	$(MAKE) -f CMakeFiles/utlib.dir/build.make CMakeFiles/utlib.dir/utilities/ft_itoa.c.o
+.PHONY : utilities/ft_itoa.c.o
+
+utilities/ft_itoa.i: utilities/ft_itoa.c.i
+
+.PHONY : utilities/ft_itoa.i
+
+# target to preprocess a source file
+utilities/ft_itoa.c.i:
+	$(MAKE) -f CMakeFiles/utlib.dir/build.make CMakeFiles/utlib.dir/utilities/ft_itoa.c.i
+.PHONY : utilities/ft_itoa.c.i
+
+utilities/ft_itoa.s: utilities/ft_itoa.c.s
+
+.PHONY : utilities/ft_itoa.s
+
+# target to generate assembly for a file
+utilities/ft_itoa.c.s:
+	$(MAKE) -f CMakeFiles/utlib.dir/build.make CMakeFiles/utlib.dir/utilities/ft_itoa.c.s
+.PHONY : utilities/ft_itoa.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... push"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... push"
+	@echo "... utlib"
 	@echo "... push_swap_lib"
+	@echo "... checker/error.o"
+	@echo "... checker/error.i"
+	@echo "... checker/error.s"
 	@echo "... checker/main.o"
 	@echo "... checker/main.i"
 	@echo "... checker/main.s"
@@ -236,6 +334,12 @@ help:
 	@echo "... push_swap_lib/pushswap.o"
 	@echo "... push_swap_lib/pushswap.i"
 	@echo "... push_swap_lib/pushswap.s"
+	@echo "... utilities/ft_atoi.o"
+	@echo "... utilities/ft_atoi.i"
+	@echo "... utilities/ft_atoi.s"
+	@echo "... utilities/ft_itoa.o"
+	@echo "... utilities/ft_itoa.i"
+	@echo "... utilities/ft_itoa.s"
 .PHONY : help
 
 

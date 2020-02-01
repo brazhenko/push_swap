@@ -4,12 +4,14 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/Users/a17641238/CLionProjects/push/push_swap_lib/pushswap.c" "/Users/a17641238/CLionProjects/push/cmake-build-debug/CMakeFiles/STATIC.dir/push_swap_lib/pushswap.c.o"
+  "/Users/lreznak-/Documents/push_swap/utilities/ft_atoi.c" "/Users/lreznak-/Documents/push_swap/cmake-build-debug/CMakeFiles/utlib.dir/utilities/ft_atoi.c.o"
+  "/Users/lreznak-/Documents/push_swap/utilities/ft_itoa.c" "/Users/lreznak-/Documents/push_swap/cmake-build-debug/CMakeFiles/utlib.dir/utilities/ft_itoa.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
+  "../utilities"
   )
 
 # Targets to which this target links.
