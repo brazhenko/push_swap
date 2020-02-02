@@ -33,7 +33,6 @@ void		sa(void)
 	stack_swap_2_top_elements(_a());
 }
 
-
 void 		sb(void)
 {
 	stack_swap_2_top_elements(_b());

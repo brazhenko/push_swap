@@ -42,10 +42,10 @@ void	sort3(void)
 		rra_();
 	}
 	else if (_a()->stack[2] > _a()->stack[1] && _a()->stack[1] <
-			_a()->stack[0] &&_a()->stack[0] < _a()->stack[2])
+			_a()->stack[0] && _a()->stack[0] < _a()->stack[2])
 		ra_();
 	else if (_a()->stack[2] < _a()->stack[1] &&	_a()->stack[1] >
-			_a()->stack[0] &&_a()->stack[0] > _a()->stack[2])
+			_a()->stack[0] && _a()->stack[0] > _a()->stack[2])
 	{
 		sa_();
 		ra_();
