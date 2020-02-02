@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/utlib.dir/utilities/ft_atoi.c.o"
   "CMakeFiles/utlib.dir/utilities/ft_itoa.c.o"
-  "libutlib.a"
   "libutlib.pdb"
+  "libutlib.a"
 )
 
 # Per-language clean rules from dependency scanning.

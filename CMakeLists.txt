@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.15)
+cmake_minimum_required(VERSION 3.1)
 project(push C)
 
 set(CMAKE_C_STANDARD 99)
@@ -12,6 +12,7 @@ set(UTILITIES_SRC utilities/ft_atoi.c utilities/ft_itoa.c)
 set(UTILITIES_INC utilities/utilities.h utilities/utilities.h)
 add_library(utlib STATIC ${UTILITIES_SRC} ${UTILITIES_INC})
 include_directories(utilities)
+
 
 add_executable(${PROJECT_NAME} main.c sort.c sorter.h)
 #add_executable(${PROJECT_NAME} checker/main.c checker/error.c checker/checker.h)

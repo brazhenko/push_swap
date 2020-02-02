@@ -59,6 +59,29 @@ void 			rrb(void);
 void 			rrr(void);
 void 			show(void);
 int 			check(void);
+int 			check_a(void);
 void			kill(void);
+
+void		sa_(void);
+
+void		sb_(void);
+
+void		ss_(void);
+
+void		pa_(void);
+
+void		pb_(void);
+
+void		ra_(void);
+
+void		rb_(void);
+
+void		rr_(void);
+
+void		rra_(void);
+
+void		rrb_(void);
+
+void		rrr_(void);
 
 #endif

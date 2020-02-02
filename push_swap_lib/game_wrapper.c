@@ -1,6 +1,6 @@
 #include "pushswap.h"
 #include <stdio.h>
-
+#include <zconf.h>
 
 /*
  * Stack A and B singletones
@@ -32,6 +32,7 @@ void		sa(void)
 {
 	stack_swap_2_top_elements(stack_a());
 }
+
 
 void 		sb(void)
 {
@@ -107,6 +108,20 @@ void		kill(void)
 	destroy_stack(stack_b());
 }
 
+int 	check_a(void)
+{
+	size_t		i;
+
+	i = stack_a()->size - 1;
+	while (i)
+	{
+		if (stack_a()->stack[i] >= stack_a()->stack[i - 1])
+			return (0);
+		i--;
+	}
+	return (1);
+}
+
 int 	check(void)
 {
 	size_t		i;
@@ -133,4 +148,70 @@ void 		show(void)
 			stack_b()->size, stack_b()->capacity);
 	stack_print(stack_a());
 	stack_print(stack_b());
+}
+
+void		sa_(void)
+{
+	sa();
+	write(1, "sa\n", 4);
+}
+
+void		sb_(void)
+{
+	sb();
+	write(1, "sb\n", 3);
+}
+
+void		ss_(void)
+{
+	ss();
+	write(1, "ss\n", 3);
+}
+
+void		pa_(void)
+{
+	pa();
+	write(1, "pa\n", 3);
+}
+
+void		pb_(void)
+{
+	pb();
+	write(1, "pb\n", 3);
+}
+
+void		ra_(void)
+{
+	ra();
+	write(1, "ra\n", 3);
+}
+
+void		rb_(void)
+{
+	rb();
+	write(1, "rb\n", 3);
+}
+
+void		rr_(void)
+{
+	rr();
+	write(1, "rr\n", 3);
+}
+
+void		rra_(void)
+{
+	rra();
+	write(1, "rra\n", 4);
+}
+
+void		rrb_(void)
+{
+	rrb();
+	write(1, "rrb\n", 4);
+}
+
+void		rrr_(void)
+{
+	rrr();
+	write(1, "rrr\n", 4);
 }

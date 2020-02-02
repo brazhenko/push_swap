@@ -23,7 +23,7 @@ int 	valid(char *arg, int *num)
 	return (0);
 }
 
-int 	get_next_oper(char *out)
+int 		get_next_oper(char *out)
 {
 	char	c;
 	size_t 	i;
@@ -52,11 +52,18 @@ const char *g_v[PUSH_SWAP_COMMAND_COUNT] =
 	"rra", "rrb", "rrr"
 };
 
+//void (*g_actions[PUSH_SWAP_COMMAND_COUNT])(void) =
+//{
+//	&sa, &sb, &ss, &pa,
+//	&pb, &ra, &rb, &rr,
+//	&rra, &rrb, &rrr
+//};
+
 void (*g_actions[PUSH_SWAP_COMMAND_COUNT])(void) =
 {
-	&sa, &sb, &ss, &pa,
-	&pb, &ra, &rb, &rr,
-	&rra, &rrb, &rrr
+	&sa_, &sb_, &ss_, &pa_,
+	&pb_, &ra_, &rb_, &rr_,
+	&rra_, &rrb_, &rrr_
 };
 
 int		process_oper(char *oper)
@@ -88,7 +95,6 @@ int 	main(int ac, char **av)
 		i = ac - 1;
 		while (i)
 		{
-			puts(av[i]);
 			// VALIDATION!
 			if (valid(av[i], &value))
 				stack_push(stack_a(), atoi(av[i]));
@@ -99,10 +105,13 @@ int 	main(int ac, char **av)
 		show();
 		while (get_next_oper(oper))
 			process_oper(oper);
+
 		if (check())
 			puts("OK");
 		else
 			puts("KO");
+		show();
+		printf("kek\n");
 		kill();
 	}
 	return (0);

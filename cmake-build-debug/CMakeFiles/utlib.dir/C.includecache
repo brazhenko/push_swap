@@ -6,3 +6,11 @@
 
 #IncludeRegexTransform: 
 
+/Users/lreznak-/Documents/push_swap/utilities/ft_atoi.c
+stddef.h
+-
+
+/Users/lreznak-/Documents/push_swap/utilities/ft_itoa.c
+stdlib.h
+-
+

@@ -6,31 +6,19 @@
 
 #IncludeRegexTransform: 
 
-../utilities/utilities.h
-
-/Users/lreznak-/Documents/push_swap/checker/checker.h
-
-/Users/lreznak-/Documents/push_swap/checker/main.c
-../push_swap_lib/pushswap.h
-/Users/lreznak-/Documents/push_swap/push_swap_lib/pushswap.h
-stddef.h
--
-stdio.h
--
-stdlib.h
--
-string.h
--
-zconf.h
--
-utilities.h
-/Users/lreznak-/Documents/push_swap/checker/utilities.h
-checker.h
-/Users/lreznak-/Documents/push_swap/checker/checker.h
-
 /Users/lreznak-/Documents/push_swap/push_swap_lib/pushswap.h
 stddef.h
 -
 stdint.h
+-
+
+/Users/lreznak-/Documents/push_swap/sort.c
+stdio.h
+-
+push_swap_lib/pushswap.h
+/Users/lreznak-/Documents/push_swap/push_swap_lib/pushswap.h
+string.h
+-
+stdlib.h
 -
 

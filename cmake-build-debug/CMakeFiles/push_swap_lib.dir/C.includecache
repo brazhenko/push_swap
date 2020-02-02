@@ -11,6 +11,8 @@ pushswap.h
 /Users/lreznak-/Documents/push_swap/push_swap_lib/pushswap.h
 stdio.h
 -
+zconf.h
+-
 
 /Users/lreznak-/Documents/push_swap/push_swap_lib/pushswap.c
 pushswap.h

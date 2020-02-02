@@ -44,7 +44,6 @@ int main(int ac, char **av)
 				error_exit();
 			i--;
 		}
-		show();
 		sort();
 		kill();
 	}
