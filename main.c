@@ -18,7 +18,7 @@ int 	valid(char *arg, int *num)
 	char	*tmp_s;
 	tmp = ft_atoi(arg);
 	tmp_s = ft_itoa(tmp);
-	if (strcmp(tmp_s, arg) == 0 && !is_there_(stack_a(), tmp))
+	if (strcmp(tmp_s, arg) == 0 && !is_there_(_a(), tmp))
 	{
 		*num = tmp;
 		free(tmp_s);
@@ -39,7 +39,7 @@ int main(int ac, char **av)
 		while (i)
 		{
 			if (valid(av[i], &value))
-				stack_push(stack_a(), atoi(av[i]));
+				stack_push(_a(), atoi(av[i]));
 			else
 				error_exit();
 			i--;

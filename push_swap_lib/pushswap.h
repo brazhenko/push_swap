@@ -44,8 +44,8 @@ int				is_there_(t_pstack *stack, PSTACK_TYPE el);
 # define PUSH_SWAP_COMMAND_COUNT	11
 # define MAX_OPER_LEN				4
 
-t_pstack		*stack_a(void);
-t_pstack		*stack_b(void);
+t_pstack		*_a(void);
+t_pstack		*_b(void);
 void 			sa(void);
 void 			sb(void);
 void 			ss(void);
@@ -62,26 +62,16 @@ int 			check(void);
 int 			check_a(void);
 void			kill(void);
 
-void		sa_(void);
-
-void		sb_(void);
-
-void		ss_(void);
-
-void		pa_(void);
-
-void		pb_(void);
-
-void		ra_(void);
-
-void		rb_(void);
-
-void		rr_(void);
-
-void		rra_(void);
-
-void		rrb_(void);
-
-void		rrr_(void);
+void			sa_(void);
+void			sb_(void);
+void			ss_(void);
+void			pa_(void);
+void			pb_(void);
+void			ra_(void);
+void			rb_(void);
+void			rr_(void);
+void			rra_(void);
+void			rrb_(void);
+void			rrr_(void);
 
 #endif

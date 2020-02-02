@@ -6,7 +6,7 @@
  * Stack A and B singletones
  */
 
-t_pstack		*stack_a(void)
+t_pstack		*_a(void)
 {
 	static t_pstack		*ptr = NULL;
 
@@ -17,7 +17,7 @@ t_pstack		*stack_a(void)
 	return (ptr);
 }
 
-t_pstack		*stack_b(void)
+t_pstack		*_b(void)
 {
 	static t_pstack		*ptr = NULL;
 
@@ -30,13 +30,13 @@ t_pstack		*stack_b(void)
 
 void		sa(void)
 {
-	stack_swap_2_top_elements(stack_a());
+	stack_swap_2_top_elements(_a());
 }
 
 
 void 		sb(void)
 {
-	stack_swap_2_top_elements(stack_b());
+	stack_swap_2_top_elements(_b());
 }
 
 void 		ss(void)
@@ -49,9 +49,9 @@ void		pa(void)
 {
 	PSTACK_TYPE		tmp;
 
-	if (stack_pop(stack_b(), &tmp) == PS_OK)
+	if (stack_pop(_b(), &tmp) == PS_OK)
 	{
-		stack_push(stack_a(), tmp);
+		stack_push(_a(), tmp);
 	}
 
 }
@@ -60,20 +60,20 @@ void 		pb(void)
 {
 	PSTACK_TYPE		tmp;
 
-	if (stack_pop(stack_a(), &tmp) == PS_OK)
+	if (stack_pop(_a(), &tmp) == PS_OK)
 	{
-		stack_push(stack_b(), tmp);
+		stack_push(_b(), tmp);
 	}
 }
 
 void		ra(void)
 {
-	stack_rot(stack_a());
+	stack_rot(_a());
 }
 
 void		rb(void)
 {
-	stack_rot(stack_b());
+	stack_rot(_b());
 }
 
 void 		rr(void)
@@ -84,12 +84,12 @@ void 		rr(void)
 
 void 		rra(void)
 {
-	stack_rev_rot(stack_a());
+	stack_rev_rot(_a());
 }
 
 void 		rrb(void)
 {
-	stack_rev_rot(stack_b());
+	stack_rev_rot(_b());
 }
 
 void 		rrr(void)
@@ -104,18 +104,18 @@ void 		rrr(void)
 
 void		kill(void)
 {
-	destroy_stack(stack_a());
-	destroy_stack(stack_b());
+	destroy_stack(_a());
+	destroy_stack(_b());
 }
 
 int 	check_a(void)
 {
 	size_t		i;
 
-	i = stack_a()->size - 1;
+	i = _a()->size - 1;
 	while (i)
 	{
-		if (stack_a()->stack[i] >= stack_a()->stack[i - 1])
+		if (_a()->stack[i] >= _a()->stack[i - 1])
 			return (0);
 		i--;
 	}
@@ -126,12 +126,12 @@ int 	check(void)
 {
 	size_t		i;
 
-	if (stack_b()->size == 0)
+	if (_b()->size == 0)
 	{
-		i = stack_a()->size - 1;
+		i = _a()->size - 1;
 		while (i)
 		{
-			if (stack_a()->stack[i] >= stack_a()->stack[i - 1])
+			if (_a()->stack[i] >= _a()->stack[i - 1])
 				return (0);
 			i--;
 		}
@@ -143,11 +143,11 @@ int 	check(void)
 void 		show(void)
 {
 	printf("STACK A: size %zu, capacity %zu\n",
-			stack_a()->size, stack_a()->capacity);
+			_a()->size, _a()->capacity);
 	printf("STACK B: size %zu, capacity %zu\n",
-			stack_b()->size, stack_b()->capacity);
-	stack_print(stack_a());
-	stack_print(stack_b());
+			_b()->size, _b()->capacity);
+	stack_print(_a());
+	stack_print(_b());
 }
 
 void		sa_(void)
