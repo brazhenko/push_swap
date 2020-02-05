@@ -57,42 +57,42 @@ include CMakeFiles/push.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/push.dir/flags.make
 
-CMakeFiles/push.dir/checker/main.c.o: CMakeFiles/push.dir/flags.make
-CMakeFiles/push.dir/checker/main.c.o: ../checker/main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lreznak-/Documents/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/push.dir/checker/main.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/push.dir/checker/main.c.o   -c /Users/lreznak-/Documents/push_swap/checker/main.c
+CMakeFiles/push.dir/main.c.o: CMakeFiles/push.dir/flags.make
+CMakeFiles/push.dir/main.c.o: ../main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lreznak-/Documents/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/push.dir/main.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/push.dir/main.c.o   -c /Users/lreznak-/Documents/push_swap/main.c
 
-CMakeFiles/push.dir/checker/main.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/push.dir/checker/main.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/lreznak-/Documents/push_swap/checker/main.c > CMakeFiles/push.dir/checker/main.c.i
+CMakeFiles/push.dir/main.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/push.dir/main.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/lreznak-/Documents/push_swap/main.c > CMakeFiles/push.dir/main.c.i
 
-CMakeFiles/push.dir/checker/main.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/push.dir/checker/main.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/lreznak-/Documents/push_swap/checker/main.c -o CMakeFiles/push.dir/checker/main.c.s
+CMakeFiles/push.dir/main.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/push.dir/main.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/lreznak-/Documents/push_swap/main.c -o CMakeFiles/push.dir/main.c.s
 
-CMakeFiles/push.dir/checker/error.c.o: CMakeFiles/push.dir/flags.make
-CMakeFiles/push.dir/checker/error.c.o: ../checker/error.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lreznak-/Documents/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/push.dir/checker/error.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/push.dir/checker/error.c.o   -c /Users/lreznak-/Documents/push_swap/checker/error.c
+CMakeFiles/push.dir/sort.c.o: CMakeFiles/push.dir/flags.make
+CMakeFiles/push.dir/sort.c.o: ../sort.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lreznak-/Documents/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/push.dir/sort.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/push.dir/sort.c.o   -c /Users/lreznak-/Documents/push_swap/sort.c
 
-CMakeFiles/push.dir/checker/error.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/push.dir/checker/error.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/lreznak-/Documents/push_swap/checker/error.c > CMakeFiles/push.dir/checker/error.c.i
+CMakeFiles/push.dir/sort.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/push.dir/sort.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/lreznak-/Documents/push_swap/sort.c > CMakeFiles/push.dir/sort.c.i
 
-CMakeFiles/push.dir/checker/error.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/push.dir/checker/error.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/lreznak-/Documents/push_swap/checker/error.c -o CMakeFiles/push.dir/checker/error.c.s
+CMakeFiles/push.dir/sort.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/push.dir/sort.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/lreznak-/Documents/push_swap/sort.c -o CMakeFiles/push.dir/sort.c.s
 
 # Object files for target push
 push_OBJECTS = \
-"CMakeFiles/push.dir/checker/main.c.o" \
-"CMakeFiles/push.dir/checker/error.c.o"
+"CMakeFiles/push.dir/main.c.o" \
+"CMakeFiles/push.dir/sort.c.o"
 
 # External object files for target push
 push_EXTERNAL_OBJECTS =
 
-push: CMakeFiles/push.dir/checker/main.c.o
-push: CMakeFiles/push.dir/checker/error.c.o
+push: CMakeFiles/push.dir/main.c.o
+push: CMakeFiles/push.dir/sort.c.o
 push: CMakeFiles/push.dir/build.make
 push: libpush_swap_lib.a
 push: libutlib.a

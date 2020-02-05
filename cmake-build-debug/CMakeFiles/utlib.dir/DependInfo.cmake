@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/lreznak-/Documents/push_swap/utilities/ft_itoa.c" "/Users/lreznak-/Documents/push_swap/cmake-build-debug/CMakeFiles/utlib.dir/utilities/ft_itoa.c.o"
   "/Users/lreznak-/Documents/push_swap/utilities/memset.c" "/Users/lreznak-/Documents/push_swap/cmake-build-debug/CMakeFiles/utlib.dir/utilities/memset.c.o"
   "/Users/lreznak-/Documents/push_swap/utilities/strcmp.c" "/Users/lreznak-/Documents/push_swap/cmake-build-debug/CMakeFiles/utlib.dir/utilities/strcmp.c.o"
+  "/Users/lreznak-/Documents/push_swap/utilities/strncmp.c" "/Users/lreznak-/Documents/push_swap/cmake-build-debug/CMakeFiles/utlib.dir/utilities/strncmp.c.o"
   "/Users/lreznak-/Documents/push_swap/utilities/strncpy.c" "/Users/lreznak-/Documents/push_swap/cmake-build-debug/CMakeFiles/utlib.dir/utilities/strncpy.c.o"
   "/Users/lreznak-/Documents/push_swap/utilities/strnew.c" "/Users/lreznak-/Documents/push_swap/cmake-build-debug/CMakeFiles/utlib.dir/utilities/strnew.c.o"
   "/Users/lreznak-/Documents/push_swap/utilities/strsplitchrset.c" "/Users/lreznak-/Documents/push_swap/cmake-build-debug/CMakeFiles/utlib.dir/utilities/strsplitchrset.c.o"

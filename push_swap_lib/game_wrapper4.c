@@ -4,7 +4,7 @@
 void		sa_(void)
 {
 	sa();
-	write(1, "sa\n", 4);
+	write(1, "sa\n", 3);
 }
 
 void		sb_(void)

@@ -149,59 +149,32 @@ push_swap_lib/fast:
 	$(MAKE) -f CMakeFiles/push_swap_lib.dir/build.make CMakeFiles/push_swap_lib.dir/build
 .PHONY : push_swap_lib/fast
 
-checker/error.o: checker/error.c.o
+main.o: main.c.o
 
-.PHONY : checker/error.o
-
-# target to build an object file
-checker/error.c.o:
-	$(MAKE) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/checker/error.c.o
-.PHONY : checker/error.c.o
-
-checker/error.i: checker/error.c.i
-
-.PHONY : checker/error.i
-
-# target to preprocess a source file
-checker/error.c.i:
-	$(MAKE) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/checker/error.c.i
-.PHONY : checker/error.c.i
-
-checker/error.s: checker/error.c.s
-
-.PHONY : checker/error.s
-
-# target to generate assembly for a file
-checker/error.c.s:
-	$(MAKE) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/checker/error.c.s
-.PHONY : checker/error.c.s
-
-checker/main.o: checker/main.c.o
-
-.PHONY : checker/main.o
+.PHONY : main.o
 
 # target to build an object file
-checker/main.c.o:
-	$(MAKE) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/checker/main.c.o
-.PHONY : checker/main.c.o
+main.c.o:
+	$(MAKE) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/main.c.o
+.PHONY : main.c.o
 
-checker/main.i: checker/main.c.i
+main.i: main.c.i
 
-.PHONY : checker/main.i
+.PHONY : main.i
 
 # target to preprocess a source file
-checker/main.c.i:
-	$(MAKE) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/checker/main.c.i
-.PHONY : checker/main.c.i
+main.c.i:
+	$(MAKE) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/main.c.i
+.PHONY : main.c.i
 
-checker/main.s: checker/main.c.s
+main.s: main.c.s
 
-.PHONY : checker/main.s
+.PHONY : main.s
 
 # target to generate assembly for a file
-checker/main.c.s:
-	$(MAKE) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/checker/main.c.s
-.PHONY : checker/main.c.s
+main.c.s:
+	$(MAKE) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/main.c.s
+.PHONY : main.c.s
 
 push_swap_lib/error.o: push_swap_lib/error.c.o
 
@@ -419,6 +392,33 @@ push_swap_lib/pushswap.c.s:
 	$(MAKE) -f CMakeFiles/push_swap_lib.dir/build.make CMakeFiles/push_swap_lib.dir/push_swap_lib/pushswap.c.s
 .PHONY : push_swap_lib/pushswap.c.s
 
+sort.o: sort.c.o
+
+.PHONY : sort.o
+
+# target to build an object file
+sort.c.o:
+	$(MAKE) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/sort.c.o
+.PHONY : sort.c.o
+
+sort.i: sort.c.i
+
+.PHONY : sort.i
+
+# target to preprocess a source file
+sort.c.i:
+	$(MAKE) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/sort.c.i
+.PHONY : sort.c.i
+
+sort.s: sort.c.s
+
+.PHONY : sort.s
+
+# target to generate assembly for a file
+sort.c.s:
+	$(MAKE) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/sort.c.s
+.PHONY : sort.c.s
+
 utilities/charptrptrdel.o: utilities/charptrptrdel.c.o
 
 .PHONY : utilities/charptrptrdel.o
@@ -581,6 +581,33 @@ utilities/strcmp.c.s:
 	$(MAKE) -f CMakeFiles/utlib.dir/build.make CMakeFiles/utlib.dir/utilities/strcmp.c.s
 .PHONY : utilities/strcmp.c.s
 
+utilities/strncmp.o: utilities/strncmp.c.o
+
+.PHONY : utilities/strncmp.o
+
+# target to build an object file
+utilities/strncmp.c.o:
+	$(MAKE) -f CMakeFiles/utlib.dir/build.make CMakeFiles/utlib.dir/utilities/strncmp.c.o
+.PHONY : utilities/strncmp.c.o
+
+utilities/strncmp.i: utilities/strncmp.c.i
+
+.PHONY : utilities/strncmp.i
+
+# target to preprocess a source file
+utilities/strncmp.c.i:
+	$(MAKE) -f CMakeFiles/utlib.dir/build.make CMakeFiles/utlib.dir/utilities/strncmp.c.i
+.PHONY : utilities/strncmp.c.i
+
+utilities/strncmp.s: utilities/strncmp.c.s
+
+.PHONY : utilities/strncmp.s
+
+# target to generate assembly for a file
+utilities/strncmp.c.s:
+	$(MAKE) -f CMakeFiles/utlib.dir/build.make CMakeFiles/utlib.dir/utilities/strncmp.c.s
+.PHONY : utilities/strncmp.c.s
+
 utilities/strncpy.o: utilities/strncpy.c.o
 
 .PHONY : utilities/strncpy.o
@@ -727,12 +754,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... utlib"
 	@echo "... push_swap_lib"
-	@echo "... checker/error.o"
-	@echo "... checker/error.i"
-	@echo "... checker/error.s"
-	@echo "... checker/main.o"
-	@echo "... checker/main.i"
-	@echo "... checker/main.s"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 	@echo "... push_swap_lib/error.o"
 	@echo "... push_swap_lib/error.i"
 	@echo "... push_swap_lib/error.s"
@@ -757,6 +781,9 @@ help:
 	@echo "... push_swap_lib/pushswap.o"
 	@echo "... push_swap_lib/pushswap.i"
 	@echo "... push_swap_lib/pushswap.s"
+	@echo "... sort.o"
+	@echo "... sort.i"
+	@echo "... sort.s"
 	@echo "... utilities/charptrptrdel.o"
 	@echo "... utilities/charptrptrdel.i"
 	@echo "... utilities/charptrptrdel.s"
@@ -775,6 +802,9 @@ help:
 	@echo "... utilities/strcmp.o"
 	@echo "... utilities/strcmp.i"
 	@echo "... utilities/strcmp.s"
+	@echo "... utilities/strncmp.o"
+	@echo "... utilities/strncmp.i"
+	@echo "... utilities/strncmp.s"
 	@echo "... utilities/strncpy.o"
 	@echo "... utilities/strncpy.i"
 	@echo "... utilities/strncpy.s"

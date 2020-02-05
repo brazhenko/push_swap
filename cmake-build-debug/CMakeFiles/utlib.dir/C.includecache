@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+/Users/lreznak-/Documents/push_swap/utilities/strncmp.c
+stddef.h
+-
+
 /Users/lreznak-/Documents/push_swap/utilities/strnew.c
 stdlib.h
 -

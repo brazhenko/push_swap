@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/push.dir/checker/main.c.o"
-  "CMakeFiles/push.dir/checker/error.c.o"
+  "CMakeFiles/push.dir/main.c.o"
+  "CMakeFiles/push.dir/sort.c.o"
   "push.pdb"
   "push"
 )

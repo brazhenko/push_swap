@@ -1,4 +1,4 @@
-#include "../push_swap_lib/pushswap.h"
+
 #include <stddef.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -6,6 +6,7 @@
 #include <zconf.h>
 #include "utilities.h"
 #include "checker.h"
+#include "../push_swap_lib/pushswap.h"
 
 int 		get_next_oper(char *out)
 {
@@ -36,13 +37,6 @@ const char *g_v[PUSH_SWAP_COMMAND_COUNT] =
 	"rra", "rrb", "rrr"
 };
 
-//void (*g_actions[PUSH_SWAP_COMMAND_COUNT])(void) =
-//{
-//	&sa, &sb, &ss, &pa,
-//	&pb, &ra, &rb, &rr,
-//	&rra, &rrb, &rrr
-//};
-
 void (*g_actions[PUSH_SWAP_COMMAND_COUNT])(void) =
 {
 	&sa_, &sb_, &ss_, &pa_,
@@ -50,25 +44,26 @@ void (*g_actions[PUSH_SWAP_COMMAND_COUNT])(void) =
 	&rra_, &rrb_, &rrr_
 };
 
-int		process_oper(char *oper)
+int			process_oper(char *oper)
 {
 	size_t		i;
 
 	i = 0;
 	while (i < PUSH_SWAP_COMMAND_COUNT)
 	{
-		if (strncmp(oper, g_v[i], MAX_OPER_LEN) == 0)
+		if (ft_strncmp(oper, g_v[i], MAX_OPER_LEN) == 0)
 		{
 			g_actions[i]();
 			return (0);
 		}
 		i++;
 	}
+	puts(oper);
 	error_exit();
 	return (1);
 }
 
-int 	main(int ac, char **av)
+int 		main(int ac, char **av)
 {
 	char 	oper[MAX_OPER_LEN + 1];
 
@@ -80,9 +75,9 @@ int 	main(int ac, char **av)
 			process_oper(oper);
 
 		if (check())
-			puts("OK");
+			write(STDOUT_FILENO, "OK\n", 3);
 		else
-			puts("KO");
+			write(STDOUT_FILENO, "KO\n", 3);
 		show();
 		kill();
 	}

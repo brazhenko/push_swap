@@ -11,6 +11,8 @@ CMakeFiles/utlib.dir/utilities/memset.c.o
  /Users/lreznak-/Documents/push_swap/utilities/memset.c
 CMakeFiles/utlib.dir/utilities/strcmp.c.o
  /Users/lreznak-/Documents/push_swap/utilities/strcmp.c
+CMakeFiles/utlib.dir/utilities/strncmp.c.o
+ /Users/lreznak-/Documents/push_swap/utilities/strncmp.c
 CMakeFiles/utlib.dir/utilities/strncpy.c.o
  /Users/lreznak-/Documents/push_swap/utilities/strncpy.c
 CMakeFiles/utlib.dir/utilities/strnew.c.o

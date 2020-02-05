@@ -11,6 +11,8 @@ CMakeFiles/utlib.dir/utilities/memset.c.o: ../utilities/memset.c
 
 CMakeFiles/utlib.dir/utilities/strcmp.c.o: ../utilities/strcmp.c
 
+CMakeFiles/utlib.dir/utilities/strncmp.c.o: ../utilities/strncmp.c
+
 CMakeFiles/utlib.dir/utilities/strncpy.c.o: ../utilities/strncpy.c
 
 CMakeFiles/utlib.dir/utilities/strnew.c.o: ../utilities/strnew.c

@@ -9,6 +9,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/utlib.dir/utilities/memset.c.o"
   "CMakeFiles/utlib.dir/utilities/charptrptrdel.c.o"
   "CMakeFiles/utlib.dir/utilities/strcmp.c.o"
+  "CMakeFiles/utlib.dir/utilities/strncmp.c.o"
   "libutlib.pdb"
   "libutlib.a"
 )

@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/Users/lreznak-/Documents/push_swap/checker/error.c" "/Users/lreznak-/Documents/push_swap/cmake-build-debug/CMakeFiles/push.dir/checker/error.c.o"
-  "/Users/lreznak-/Documents/push_swap/checker/main.c" "/Users/lreznak-/Documents/push_swap/cmake-build-debug/CMakeFiles/push.dir/checker/main.c.o"
+  "/Users/lreznak-/Documents/push_swap/main.c" "/Users/lreznak-/Documents/push_swap/cmake-build-debug/CMakeFiles/push.dir/main.c.o"
+  "/Users/lreznak-/Documents/push_swap/sort.c" "/Users/lreznak-/Documents/push_swap/cmake-build-debug/CMakeFiles/push.dir/sort.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 
