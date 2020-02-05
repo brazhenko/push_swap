@@ -3,7 +3,7 @@
 #include <string.h>
 #include <stdlib.h>
 
-void	sort2(void)
+void		sort2(void)
 {
 	if (check())
 	{
@@ -63,47 +63,6 @@ void	push_all_except_3_in_b(void)
 	}
 }
 
-void	pop_up_from_a(size_t num)
-{
-	PSTACK_TYPE		el;
-
-	el = a__()->stack[num];
-	if (num < a__()->size / 2)
-	{
-		while (a__()->stack[a__()->size - 1] != el)
-		{
-			rra_();
-		}
-	}
-	else
-	{
-		while (a__()->stack[a__()->size - 1] != el)
-			ra_();
-	}
-}
-
-void	pop_up_from_b(size_t num)
-{
-	PSTACK_TYPE		el;
-
-	el = b__()->stack[num];
-	if (num < b__()->size / 2)
-	{
-		while (b__()->stack[b__()->size - 1] != el)
-		{
-			rrb_();
-		}
-
-	}
-	else
-	{
-		while (b__()->stack[b__()->size - 1] != el)
-		{
-			rb_();
-		}
-	}
-}
-
 size_t		find_the_ok_place_in_a(PSTACK_TYPE val)
 {
 	size_t		i;
@@ -134,6 +93,72 @@ size_t		calc_min_steps_for_ok_place(PSTACK_TYPE val)
 
 }
 
+void	pop_up_from_a(size_t num)
+{
+	PSTACK_TYPE		el;
+
+	el = a__()->stack[num];
+	if (num < a__()->size / 2)
+	{
+		while (a__()->stack[a__()->size - 1] != el)
+		{
+			rra_();
+		}
+	}
+	else
+	{
+		while (a__()->stack[a__()->size - 1] != el)
+			ra_();
+	}
+}
+
+void	pop_up_from_b(size_t num)
+{
+	PSTACK_TYPE		el;
+
+	el = b__()->stack[num];
+	if (num < b__()->size / 2)
+	{
+		while (b__()->stack[b__()->size - 1] != el)
+		{
+			rrb_();
+		}
+	}
+	else
+	{
+		while (b__()->stack[b__()->size - 1] != el)
+		{
+			rb_();
+		}
+	}
+}
+
+void	pop_from_a_and_b(size_t a_id, size_t b_id)
+{
+	if ((a_id < a__()->size / 2) && (b_id < b__()->size / 2))
+	{
+		while (a_id != a__()->size - 1 && b_id != b__()->size - 1)
+		{
+			a_id = (a_id == 0 ? a__()->size - 1 : a_id - 1);
+			b_id = (b_id == 0 ? a__()->size - 1 : b_id - 1);
+			rrr_();
+		}
+	}
+	else if ((a_id >= a__()->size / 2) && (b_id >= b__()->size / 2))
+	{
+		while (a_id != a__()->size - 1 && b_id != b__()->size - 1)
+		{
+			a_id++;
+			b_id++;
+			printf("%d -- %d\n", a_id, b_id);
+			fflush(stdout);
+			rr_();
+		}
+	}
+	pop_up_from_a(a_id);
+	pop_up_from_b(b_id);
+}
+
 void	fill_one(void)
 {
 	size_t		min_steps_count;
@@ -153,10 +178,10 @@ void	fill_one(void)
 			min_steps_count_num = i;
 		i++;
 	}
-	// printf("steps: %zu, num: %d\n", min_steps_count, min_steps_count_num);
-	// printf("OK PLACE %zu\n", find_the_ok_place_in_a(stack_b()->stack[_b()->size - 1]));
-	pop_up_from_b(min_steps_count_num);
-	pop_up_from_a(find_the_ok_place_in_a(b__()->stack[b__()->size - 1]));
+	//pop_up_from_b(min_steps_count_num);
+	//pop_up_from_a(find_the_ok_place_in_a(b__()->stack[b__()->size - 1]));
+	pop_from_a_and_b(min_steps_count_num,
+			find_the_ok_place_in_a(b__()->stack[b__()->size - 1]));
 	pa_();
 }
 
@@ -168,7 +193,7 @@ void		normalize()
 	pop_up_from_a(i);
 }
 
-void	sortelse(void)
+void		sortelse(void)
 {
 	push_all_except_3_in_b();
 	sort3();

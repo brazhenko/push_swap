@@ -6,26 +6,6 @@
 
 #IncludeRegexTransform: 
 
-../utilities/utilities.h
-stddef.h
--
-
-/Users/lreznak-/Documents/push_swap/main.c
-stdio.h
--
-push_swap_lib/pushswap.h
-/Users/lreznak-/Documents/push_swap/push_swap_lib/pushswap.h
-utilities.h
-/Users/lreznak-/Documents/push_swap/utilities.h
-stdlib.h
--
-string.h
--
-unistd.h
--
-sorter.h
-/Users/lreznak-/Documents/push_swap/sorter.h
-
 /Users/lreznak-/Documents/push_swap/push_swap_lib/pushswap.h
 stddef.h
 -
@@ -41,6 +21,4 @@ string.h
 -
 stdlib.h
 -
-
-/Users/lreznak-/Documents/push_swap/sorter.h
 
