@@ -135,9 +135,35 @@ CMakeFiles/push_swap_lib.dir/push_swap_lib/parse_argv.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/push_swap_lib.dir/push_swap_lib/parse_argv.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/lreznak-/Documents/push_swap/push_swap_lib/parse_argv.c -o CMakeFiles/push_swap_lib.dir/push_swap_lib/parse_argv.c.s
 
+CMakeFiles/push_swap_lib.dir/push_swap_lib/error.c.o: CMakeFiles/push_swap_lib.dir/flags.make
+CMakeFiles/push_swap_lib.dir/push_swap_lib/error.c.o: ../push_swap_lib/error.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lreznak-/Documents/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/push_swap_lib.dir/push_swap_lib/error.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/push_swap_lib.dir/push_swap_lib/error.c.o   -c /Users/lreznak-/Documents/push_swap/push_swap_lib/error.c
+
+CMakeFiles/push_swap_lib.dir/push_swap_lib/error.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/push_swap_lib.dir/push_swap_lib/error.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/lreznak-/Documents/push_swap/push_swap_lib/error.c > CMakeFiles/push_swap_lib.dir/push_swap_lib/error.c.i
+
+CMakeFiles/push_swap_lib.dir/push_swap_lib/error.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/push_swap_lib.dir/push_swap_lib/error.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/lreznak-/Documents/push_swap/push_swap_lib/error.c -o CMakeFiles/push_swap_lib.dir/push_swap_lib/error.c.s
+
+CMakeFiles/push_swap_lib.dir/utilities/memcpy.c.o: CMakeFiles/push_swap_lib.dir/flags.make
+CMakeFiles/push_swap_lib.dir/utilities/memcpy.c.o: ../utilities/memcpy.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lreznak-/Documents/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/push_swap_lib.dir/utilities/memcpy.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/push_swap_lib.dir/utilities/memcpy.c.o   -c /Users/lreznak-/Documents/push_swap/utilities/memcpy.c
+
+CMakeFiles/push_swap_lib.dir/utilities/memcpy.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/push_swap_lib.dir/utilities/memcpy.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/lreznak-/Documents/push_swap/utilities/memcpy.c > CMakeFiles/push_swap_lib.dir/utilities/memcpy.c.i
+
+CMakeFiles/push_swap_lib.dir/utilities/memcpy.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/push_swap_lib.dir/utilities/memcpy.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/lreznak-/Documents/push_swap/utilities/memcpy.c -o CMakeFiles/push_swap_lib.dir/utilities/memcpy.c.s
+
 CMakeFiles/push_swap_lib.dir/push_swap_lib/game_wrapper5.c.o: CMakeFiles/push_swap_lib.dir/flags.make
 CMakeFiles/push_swap_lib.dir/push_swap_lib/game_wrapper5.c.o: ../push_swap_lib/game_wrapper5.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lreznak-/Documents/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/push_swap_lib.dir/push_swap_lib/game_wrapper5.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lreznak-/Documents/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/push_swap_lib.dir/push_swap_lib/game_wrapper5.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/push_swap_lib.dir/push_swap_lib/game_wrapper5.c.o   -c /Users/lreznak-/Documents/push_swap/push_swap_lib/game_wrapper5.c
 
 CMakeFiles/push_swap_lib.dir/push_swap_lib/game_wrapper5.c.i: cmake_force
@@ -156,6 +182,8 @@ push_swap_lib_OBJECTS = \
 "CMakeFiles/push_swap_lib.dir/push_swap_lib/game_wrapper3.c.o" \
 "CMakeFiles/push_swap_lib.dir/push_swap_lib/game_wrapper4.c.o" \
 "CMakeFiles/push_swap_lib.dir/push_swap_lib/parse_argv.c.o" \
+"CMakeFiles/push_swap_lib.dir/push_swap_lib/error.c.o" \
+"CMakeFiles/push_swap_lib.dir/utilities/memcpy.c.o" \
 "CMakeFiles/push_swap_lib.dir/push_swap_lib/game_wrapper5.c.o"
 
 # External object files for target push_swap_lib
@@ -167,10 +195,12 @@ libpush_swap_lib.a: CMakeFiles/push_swap_lib.dir/push_swap_lib/game_wrapper2.c.o
 libpush_swap_lib.a: CMakeFiles/push_swap_lib.dir/push_swap_lib/game_wrapper3.c.o
 libpush_swap_lib.a: CMakeFiles/push_swap_lib.dir/push_swap_lib/game_wrapper4.c.o
 libpush_swap_lib.a: CMakeFiles/push_swap_lib.dir/push_swap_lib/parse_argv.c.o
+libpush_swap_lib.a: CMakeFiles/push_swap_lib.dir/push_swap_lib/error.c.o
+libpush_swap_lib.a: CMakeFiles/push_swap_lib.dir/utilities/memcpy.c.o
 libpush_swap_lib.a: CMakeFiles/push_swap_lib.dir/push_swap_lib/game_wrapper5.c.o
 libpush_swap_lib.a: CMakeFiles/push_swap_lib.dir/build.make
 libpush_swap_lib.a: CMakeFiles/push_swap_lib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/lreznak-/Documents/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking C static library libpush_swap_lib.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/lreznak-/Documents/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking C static library libpush_swap_lib.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/push_swap_lib.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/push_swap_lib.dir/link.txt --verbose=$(VERBOSE)
 

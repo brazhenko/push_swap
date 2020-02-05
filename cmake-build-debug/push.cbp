@@ -170,8 +170,17 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/lreznak-/Documents/push_swap/main.c">
+		<Unit filename="/Users/lreznak-/Documents/push_swap/checker/checker.h">
 			<Option target="push"/>
+		</Unit>
+		<Unit filename="/Users/lreznak-/Documents/push_swap/checker/error.c">
+			<Option target="push"/>
+		</Unit>
+		<Unit filename="/Users/lreznak-/Documents/push_swap/checker/main.c">
+			<Option target="push"/>
+		</Unit>
+		<Unit filename="/Users/lreznak-/Documents/push_swap/push_swap_lib/error.c">
+			<Option target="push_swap_lib"/>
 		</Unit>
 		<Unit filename="/Users/lreznak-/Documents/push_swap/push_swap_lib/game_wrapper.c">
 			<Option target="push_swap_lib"/>
@@ -197,12 +206,6 @@
 		<Unit filename="/Users/lreznak-/Documents/push_swap/push_swap_lib/pushswap.h">
 			<Option target="push_swap_lib"/>
 		</Unit>
-		<Unit filename="/Users/lreznak-/Documents/push_swap/sort.c">
-			<Option target="push"/>
-		</Unit>
-		<Unit filename="/Users/lreznak-/Documents/push_swap/sorter.h">
-			<Option target="push"/>
-		</Unit>
 		<Unit filename="/Users/lreznak-/Documents/push_swap/utilities/charptrptrdel.c">
 			<Option target="utlib"/>
 		</Unit>
@@ -211,6 +214,9 @@
 		</Unit>
 		<Unit filename="/Users/lreznak-/Documents/push_swap/utilities/ft_itoa.c">
 			<Option target="utlib"/>
+		</Unit>
+		<Unit filename="/Users/lreznak-/Documents/push_swap/utilities/memcpy.c">
+			<Option target="push_swap_lib"/>
 		</Unit>
 		<Unit filename="/Users/lreznak-/Documents/push_swap/utilities/memset.c">
 			<Option target="utlib"/>

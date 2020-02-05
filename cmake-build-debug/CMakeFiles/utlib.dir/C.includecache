@@ -6,14 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/Users/lreznak-/Documents/push_swap/utilities/charptrptrdel.c
-stdlib.h
--
-
-/Users/lreznak-/Documents/push_swap/utilities/strcmp.c
-stddef.h
--
-
 /Users/lreznak-/Documents/push_swap/utilities/strnew.c
 stdlib.h
 -

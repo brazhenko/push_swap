@@ -3,8 +3,8 @@
 #include <zconf.h>
 
 /*
- * Stack A and B singletones
- */
+** Stack A and B singletones
+*/
 
 t_pstack	*a__(void)
 {
@@ -48,10 +48,10 @@ int 	check_a(void)
 	while (i)
 	{
 		if (a__()->stack[i] >= a__()->stack[i - 1])
-			return (0);
+			return (FALSE);
 		i--;
 	}
-	return (1);
+	return (TRUE);
 }
 
 int 	check(void)
@@ -64,12 +64,12 @@ int 	check(void)
 		while (i)
 		{
 			if (a__()->stack[i] >= a__()->stack[i - 1])
-				return (0);
+				return (FALSE);
 			i--;
 		}
-		return (1);
+		return (TRUE);
 	}
-	return (0);
+	return (FALSE);
 }
 
 void 		show(void)

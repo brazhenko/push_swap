@@ -42,9 +42,10 @@ int 			stack_rot(t_pstack *stack);
 int				is_there_(t_pstack *stack, PSTACK_TYPE el);
 void			parse_argv(int ac, char **av);
 void			error_exit(void);
+
 /*
- * game wrapping
- */
+** game wrapping
+*/
 
 # define PUSH_SWAP_COMMAND_COUNT	11
 # define MAX_OPER_LEN				4

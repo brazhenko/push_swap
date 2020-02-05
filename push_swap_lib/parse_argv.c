@@ -1,7 +1,3 @@
-//
-// Created by Lommy greenhands Reznak mo reznak on 2020-02-05.
-//
-
 #include <stddef.h>
 #include "utilities.h"
 #include "pushswap.h"
@@ -18,10 +14,10 @@ int 	valid(char *arg, int *num)
 	{
 		*num = tmp;
 		free(tmp_s);
-		return (1);
+		return (TRUE);
 	}
 	free(tmp_s);
-	return (0);
+	return (FALSE);
 }
 
 void 	parse_arg(char *arg)

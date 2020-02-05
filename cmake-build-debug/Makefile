@@ -149,32 +149,86 @@ push_swap_lib/fast:
 	$(MAKE) -f CMakeFiles/push_swap_lib.dir/build.make CMakeFiles/push_swap_lib.dir/build
 .PHONY : push_swap_lib/fast
 
-main.o: main.c.o
+checker/error.o: checker/error.c.o
 
-.PHONY : main.o
+.PHONY : checker/error.o
 
 # target to build an object file
-main.c.o:
-	$(MAKE) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/main.c.o
-.PHONY : main.c.o
+checker/error.c.o:
+	$(MAKE) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/checker/error.c.o
+.PHONY : checker/error.c.o
 
-main.i: main.c.i
+checker/error.i: checker/error.c.i
 
-.PHONY : main.i
+.PHONY : checker/error.i
 
 # target to preprocess a source file
-main.c.i:
-	$(MAKE) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/main.c.i
-.PHONY : main.c.i
+checker/error.c.i:
+	$(MAKE) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/checker/error.c.i
+.PHONY : checker/error.c.i
 
-main.s: main.c.s
+checker/error.s: checker/error.c.s
 
-.PHONY : main.s
+.PHONY : checker/error.s
 
 # target to generate assembly for a file
-main.c.s:
-	$(MAKE) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/main.c.s
-.PHONY : main.c.s
+checker/error.c.s:
+	$(MAKE) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/checker/error.c.s
+.PHONY : checker/error.c.s
+
+checker/main.o: checker/main.c.o
+
+.PHONY : checker/main.o
+
+# target to build an object file
+checker/main.c.o:
+	$(MAKE) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/checker/main.c.o
+.PHONY : checker/main.c.o
+
+checker/main.i: checker/main.c.i
+
+.PHONY : checker/main.i
+
+# target to preprocess a source file
+checker/main.c.i:
+	$(MAKE) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/checker/main.c.i
+.PHONY : checker/main.c.i
+
+checker/main.s: checker/main.c.s
+
+.PHONY : checker/main.s
+
+# target to generate assembly for a file
+checker/main.c.s:
+	$(MAKE) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/checker/main.c.s
+.PHONY : checker/main.c.s
+
+push_swap_lib/error.o: push_swap_lib/error.c.o
+
+.PHONY : push_swap_lib/error.o
+
+# target to build an object file
+push_swap_lib/error.c.o:
+	$(MAKE) -f CMakeFiles/push_swap_lib.dir/build.make CMakeFiles/push_swap_lib.dir/push_swap_lib/error.c.o
+.PHONY : push_swap_lib/error.c.o
+
+push_swap_lib/error.i: push_swap_lib/error.c.i
+
+.PHONY : push_swap_lib/error.i
+
+# target to preprocess a source file
+push_swap_lib/error.c.i:
+	$(MAKE) -f CMakeFiles/push_swap_lib.dir/build.make CMakeFiles/push_swap_lib.dir/push_swap_lib/error.c.i
+.PHONY : push_swap_lib/error.c.i
+
+push_swap_lib/error.s: push_swap_lib/error.c.s
+
+.PHONY : push_swap_lib/error.s
+
+# target to generate assembly for a file
+push_swap_lib/error.c.s:
+	$(MAKE) -f CMakeFiles/push_swap_lib.dir/build.make CMakeFiles/push_swap_lib.dir/push_swap_lib/error.c.s
+.PHONY : push_swap_lib/error.c.s
 
 push_swap_lib/game_wrapper.o: push_swap_lib/game_wrapper.c.o
 
@@ -365,33 +419,6 @@ push_swap_lib/pushswap.c.s:
 	$(MAKE) -f CMakeFiles/push_swap_lib.dir/build.make CMakeFiles/push_swap_lib.dir/push_swap_lib/pushswap.c.s
 .PHONY : push_swap_lib/pushswap.c.s
 
-sort.o: sort.c.o
-
-.PHONY : sort.o
-
-# target to build an object file
-sort.c.o:
-	$(MAKE) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/sort.c.o
-.PHONY : sort.c.o
-
-sort.i: sort.c.i
-
-.PHONY : sort.i
-
-# target to preprocess a source file
-sort.c.i:
-	$(MAKE) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/sort.c.i
-.PHONY : sort.c.i
-
-sort.s: sort.c.s
-
-.PHONY : sort.s
-
-# target to generate assembly for a file
-sort.c.s:
-	$(MAKE) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/sort.c.s
-.PHONY : sort.c.s
-
 utilities/charptrptrdel.o: utilities/charptrptrdel.c.o
 
 .PHONY : utilities/charptrptrdel.o
@@ -472,6 +499,33 @@ utilities/ft_itoa.s: utilities/ft_itoa.c.s
 utilities/ft_itoa.c.s:
 	$(MAKE) -f CMakeFiles/utlib.dir/build.make CMakeFiles/utlib.dir/utilities/ft_itoa.c.s
 .PHONY : utilities/ft_itoa.c.s
+
+utilities/memcpy.o: utilities/memcpy.c.o
+
+.PHONY : utilities/memcpy.o
+
+# target to build an object file
+utilities/memcpy.c.o:
+	$(MAKE) -f CMakeFiles/push_swap_lib.dir/build.make CMakeFiles/push_swap_lib.dir/utilities/memcpy.c.o
+.PHONY : utilities/memcpy.c.o
+
+utilities/memcpy.i: utilities/memcpy.c.i
+
+.PHONY : utilities/memcpy.i
+
+# target to preprocess a source file
+utilities/memcpy.c.i:
+	$(MAKE) -f CMakeFiles/push_swap_lib.dir/build.make CMakeFiles/push_swap_lib.dir/utilities/memcpy.c.i
+.PHONY : utilities/memcpy.c.i
+
+utilities/memcpy.s: utilities/memcpy.c.s
+
+.PHONY : utilities/memcpy.s
+
+# target to generate assembly for a file
+utilities/memcpy.c.s:
+	$(MAKE) -f CMakeFiles/push_swap_lib.dir/build.make CMakeFiles/push_swap_lib.dir/utilities/memcpy.c.s
+.PHONY : utilities/memcpy.c.s
 
 utilities/memset.o: utilities/memset.c.o
 
@@ -673,9 +727,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... utlib"
 	@echo "... push_swap_lib"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... checker/error.o"
+	@echo "... checker/error.i"
+	@echo "... checker/error.s"
+	@echo "... checker/main.o"
+	@echo "... checker/main.i"
+	@echo "... checker/main.s"
+	@echo "... push_swap_lib/error.o"
+	@echo "... push_swap_lib/error.i"
+	@echo "... push_swap_lib/error.s"
 	@echo "... push_swap_lib/game_wrapper.o"
 	@echo "... push_swap_lib/game_wrapper.i"
 	@echo "... push_swap_lib/game_wrapper.s"
@@ -697,9 +757,6 @@ help:
 	@echo "... push_swap_lib/pushswap.o"
 	@echo "... push_swap_lib/pushswap.i"
 	@echo "... push_swap_lib/pushswap.s"
-	@echo "... sort.o"
-	@echo "... sort.i"
-	@echo "... sort.s"
 	@echo "... utilities/charptrptrdel.o"
 	@echo "... utilities/charptrptrdel.i"
 	@echo "... utilities/charptrptrdel.s"
@@ -709,6 +766,9 @@ help:
 	@echo "... utilities/ft_itoa.o"
 	@echo "... utilities/ft_itoa.i"
 	@echo "... utilities/ft_itoa.s"
+	@echo "... utilities/memcpy.o"
+	@echo "... utilities/memcpy.i"
+	@echo "... utilities/memcpy.s"
 	@echo "... utilities/memset.o"
 	@echo "... utilities/memset.i"
 	@echo "... utilities/memset.s"

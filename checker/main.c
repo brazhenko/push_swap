@@ -7,22 +7,6 @@
 #include "utilities.h"
 #include "checker.h"
 
-int 	valid(char *arg, int *num)
-{
-	int 	tmp;
-	char	*tmp_s;
-	tmp = ft_atoi(arg);
-	tmp_s = ft_itoa(tmp);
-	if (strcmp(tmp_s, arg) == 0 && !is_there_(stack_a(), tmp))
-	{
-		*num = tmp;
-		free(tmp_s);
-		return (1);
-	}
-	free(tmp_s);
-	return (0);
-}
-
 int 		get_next_oper(char *out)
 {
 	char	c;
@@ -86,22 +70,11 @@ int		process_oper(char *oper)
 
 int 	main(int ac, char **av)
 {
-	size_t 	i;
-	int 	value;
 	char 	oper[MAX_OPER_LEN + 1];
 
 	if (ac > 1)
 	{
-		i = ac - 1;
-		while (i)
-		{
-			// VALIDATION!
-			if (valid(av[i], &value))
-				stack_push(stack_a(), ft_atoi(av[i]));
-			else
-				error_exit();
-			i--;
-		}
+		parse_argv(ac, av);
 		show();
 		while (get_next_oper(oper))
 			process_oper(oper);
@@ -111,7 +84,6 @@ int 	main(int ac, char **av)
 		else
 			puts("KO");
 		show();
-		printf("kek\n");
 		kill();
 	}
 	return (0);

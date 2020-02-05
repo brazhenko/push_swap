@@ -17,5 +17,6 @@ char	*ft_strnew(size_t size);
 void		charptrptrdel(char **ptr);
 char			**strsplitcharset(char const *s, char *charset);
 int		ft_strcmp(const char *s1, const char *s2);
+void	*ft_memcpy(void *dst, const void *src, size_t n);
 
 #endif

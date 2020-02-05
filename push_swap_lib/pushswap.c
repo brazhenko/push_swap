@@ -3,6 +3,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+#include <utilities.h>
 
 #define NUL '\0'
 
@@ -14,20 +15,11 @@ t_pstack		*init_stack(void)
 {
 	t_pstack	*ret;
 
-	ret = malloc(sizeof(t_pstack));
-	if (ret)
-	{
-		memset(ret, 0, sizeof(*ret));
-		//xmalloc
-		ret->stack = malloc(PSTACK_INIT_CAPACITY * sizeof(PSTACK_TYPE));
-		ret->capacity = PSTACK_INIT_CAPACITY;
-		return (ret);
-	}
-	else
-	{
-		puts("no memory was allocated");
-		exit(EXIT_FAILURE);
-	}
+	ret = xmalloc(sizeof(t_pstack));
+	memset(ret, 0, sizeof(*ret));
+	ret->stack = xmalloc(PSTACK_INIT_CAPACITY * sizeof(PSTACK_TYPE));
+	ret->capacity = PSTACK_INIT_CAPACITY;
+	return (ret);
 }
 
 
@@ -61,13 +53,12 @@ int 			stack_push(t_pstack *stack, PSTACK_TYPE value)
 	}
 	else
 	{
-		// xmalloc
 		tmp = stack->stack;
 		stack->stack = ptr;
-		ptr = malloc(stack->capacity * sizeof(PSTACK_TYPE)
+		ptr = xmalloc(stack->capacity * sizeof(PSTACK_TYPE)
 				+ PSTACK_EXTRA_CAPACITY * sizeof(PSTACK_TYPE));
-		memcpy(ptr, tmp, sizeof(PSTACK_TYPE) * stack->size);
-		memset(tmp, 0, sizeof(PSTACK_TYPE) * stack->size);
+		ft_memcpy(ptr, tmp, sizeof(PSTACK_TYPE) * stack->size);
+		ft_memset(tmp, 0, sizeof(PSTACK_TYPE) * stack->size);
 		free(tmp);
 		stack->stack = ptr;
 		stack->capacity += PSTACK_EXTRA_CAPACITY;
