@@ -70,7 +70,7 @@ int 		main(int ac, char **av)
 	if (ac > 1)
 	{
 		parse_argv(ac, av);
-		show();
+//		show();
 		while (get_next_oper(oper))
 			process_oper(oper);
 
@@ -78,7 +78,7 @@ int 		main(int ac, char **av)
 			write(STDOUT_FILENO, "OK\n", 3);
 		else
 			write(STDOUT_FILENO, "KO\n", 3);
-		show();
+		//show();
 		kill();
 	}
 	return (0);

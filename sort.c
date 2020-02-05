@@ -181,7 +181,7 @@ void	sortelse(void)
 
 void 	sort(void)
 {
-	if (a__()->size == 1)
+	if (a__()->size == 1 || check())
 		return ;
 	else if (a__()->size == 2)
 		sort2();
