@@ -1,11 +1,11 @@
 #include <stdlib.h>
 
-static int myabs(int x)
+static int	myabs(int x)
 {
 	return (((x) < 0) ? (-(x)) : (x));
 }
 
-static int		ft_numlen(int n, int minus)
+int			ft_numlen(int n, int minus)
 {
 	int numlen;
 

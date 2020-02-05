@@ -6,7 +6,7 @@
  * Stack A and B singletones
  */
 
-t_pstack		*_a(void)
+t_pstack	*a__(void)
 {
 	static t_pstack		*ptr = NULL;
 
@@ -17,7 +17,7 @@ t_pstack		*_a(void)
 	return (ptr);
 }
 
-t_pstack		*_b(void)
+t_pstack	*b__(void)
 {
 	static t_pstack		*ptr = NULL;
 
@@ -27,94 +27,27 @@ t_pstack		*_b(void)
 	}
 	return (ptr);
 }
-
-void		sa(void)
-{
-	stack_swap_2_top_elements(_a());
-}
-
-void 		sb(void)
-{
-	stack_swap_2_top_elements(_b());
-}
-
-void 		ss(void)
-{
-	sa();
-	sb();
-}
-
-void		pa(void)
-{
-	PSTACK_TYPE		tmp;
-
-	if (stack_pop(_b(), &tmp) == PS_OK)
-	{
-		stack_push(_a(), tmp);
-	}
-
-}
-
-void 		pb(void)
-{
-	PSTACK_TYPE		tmp;
-
-	if (stack_pop(_a(), &tmp) == PS_OK)
-	{
-		stack_push(_b(), tmp);
-	}
-}
-
-void		ra(void)
-{
-	stack_rot(_a());
-}
-
-void		rb(void)
-{
-	stack_rot(_b());
-}
-
-void 		rr(void)
-{
-	ra();
-	rb();
-}
-
-void 		rra(void)
-{
-	stack_rev_rot(_a());
-}
-
-void 		rrb(void)
-{
-	stack_rev_rot(_b());
-}
-
-void 		rrr(void)
-{
-	rra();
-	rrb();
-}
-
-/*
- * could be called ONLY ONCE!
- */
 
 void		kill(void)
 {
-	destroy_stack(_a());
-	destroy_stack(_b());
+	static int 		killed = FALSE;
+
+	if (!killed)
+	{
+		killed = TRUE;
+		destroy_stack(a__());
+		destroy_stack(b__());
+	}
 }
 
 int 	check_a(void)
 {
 	size_t		i;
 
-	i = _a()->size - 1;
+	i = a__()->size - 1;
 	while (i)
 	{
-		if (_a()->stack[i] >= _a()->stack[i - 1])
+		if (a__()->stack[i] >= a__()->stack[i - 1])
 			return (0);
 		i--;
 	}
@@ -125,12 +58,12 @@ int 	check(void)
 {
 	size_t		i;
 
-	if (_b()->size == 0)
+	if (b__()->size == 0)
 	{
-		i = _a()->size - 1;
+		i = a__()->size - 1;
 		while (i)
 		{
-			if (_a()->stack[i] >= _a()->stack[i - 1])
+			if (a__()->stack[i] >= a__()->stack[i - 1])
 				return (0);
 			i--;
 		}
@@ -142,75 +75,10 @@ int 	check(void)
 void 		show(void)
 {
 	printf("STACK A: size %zu, capacity %zu\n",
-			_a()->size, _a()->capacity);
+			a__()->size, a__()->capacity);
 	printf("STACK B: size %zu, capacity %zu\n",
-			_b()->size, _b()->capacity);
-	stack_print(_a());
-	stack_print(_b());
+			b__()->size, b__()->capacity);
+	stack_print(a__());
+	stack_print(b__());
 }
 
-void		sa_(void)
-{
-	sa();
-	write(1, "sa\n", 4);
-}
-
-void		sb_(void)
-{
-	sb();
-	write(1, "sb\n", 3);
-}
-
-void		ss_(void)
-{
-	ss();
-	write(1, "ss\n", 3);
-}
-
-void		pa_(void)
-{
-	pa();
-	write(1, "pa\n", 3);
-}
-
-void		pb_(void)
-{
-	pb();
-	write(1, "pb\n", 3);
-}
-
-void		ra_(void)
-{
-	ra();
-	write(1, "ra\n", 3);
-}
-
-void		rb_(void)
-{
-	rb();
-	write(1, "rb\n", 3);
-}
-
-void		rr_(void)
-{
-	rr();
-	write(1, "rr\n", 3);
-}
-
-void		rra_(void)
-{
-	rra();
-	write(1, "rra\n", 4);
-}
-
-void		rrb_(void)
-{
-	rrb();
-	write(1, "rrb\n", 4);
-}
-
-void		rrr_(void)
-{
-	rrr();
-	write(1, "rrr\n", 4);
-}

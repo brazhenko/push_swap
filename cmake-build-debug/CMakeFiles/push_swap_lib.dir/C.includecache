@@ -6,24 +6,20 @@
 
 #IncludeRegexTransform: 
 
-/Users/lreznak-/Documents/push_swap/push_swap_lib/game_wrapper.c
-pushswap.h
-/Users/lreznak-/Documents/push_swap/push_swap_lib/pushswap.h
-stdio.h
--
-zconf.h
+../utilities/utilities.h
+stddef.h
 -
 
-/Users/lreznak-/Documents/push_swap/push_swap_lib/pushswap.c
+/Users/lreznak-/Documents/push_swap/push_swap_lib/parse_argv.c
+stddef.h
+-
+utilities.h
+/Users/lreznak-/Documents/push_swap/push_swap_lib/utilities.h
 pushswap.h
 /Users/lreznak-/Documents/push_swap/push_swap_lib/pushswap.h
 stdlib.h
 -
 stdio.h
--
-string.h
--
-stdlib.h
 -
 
 /Users/lreznak-/Documents/push_swap/push_swap_lib/pushswap.h

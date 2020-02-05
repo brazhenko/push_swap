@@ -83,19 +83,139 @@ CMakeFiles/utlib.dir/utilities/ft_itoa.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/utlib.dir/utilities/ft_itoa.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/lreznak-/Documents/push_swap/utilities/ft_itoa.c -o CMakeFiles/utlib.dir/utilities/ft_itoa.c.s
 
+CMakeFiles/utlib.dir/utilities/strsplitchrset.c.o: CMakeFiles/utlib.dir/flags.make
+CMakeFiles/utlib.dir/utilities/strsplitchrset.c.o: ../utilities/strsplitchrset.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lreznak-/Documents/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/utlib.dir/utilities/strsplitchrset.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/utlib.dir/utilities/strsplitchrset.c.o   -c /Users/lreznak-/Documents/push_swap/utilities/strsplitchrset.c
+
+CMakeFiles/utlib.dir/utilities/strsplitchrset.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/utlib.dir/utilities/strsplitchrset.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/lreznak-/Documents/push_swap/utilities/strsplitchrset.c > CMakeFiles/utlib.dir/utilities/strsplitchrset.c.i
+
+CMakeFiles/utlib.dir/utilities/strsplitchrset.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/utlib.dir/utilities/strsplitchrset.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/lreznak-/Documents/push_swap/utilities/strsplitchrset.c -o CMakeFiles/utlib.dir/utilities/strsplitchrset.c.s
+
+CMakeFiles/utlib.dir/utilities/xmalloc.c.o: CMakeFiles/utlib.dir/flags.make
+CMakeFiles/utlib.dir/utilities/xmalloc.c.o: ../utilities/xmalloc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lreznak-/Documents/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/utlib.dir/utilities/xmalloc.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/utlib.dir/utilities/xmalloc.c.o   -c /Users/lreznak-/Documents/push_swap/utilities/xmalloc.c
+
+CMakeFiles/utlib.dir/utilities/xmalloc.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/utlib.dir/utilities/xmalloc.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/lreznak-/Documents/push_swap/utilities/xmalloc.c > CMakeFiles/utlib.dir/utilities/xmalloc.c.i
+
+CMakeFiles/utlib.dir/utilities/xmalloc.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/utlib.dir/utilities/xmalloc.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/lreznak-/Documents/push_swap/utilities/xmalloc.c -o CMakeFiles/utlib.dir/utilities/xmalloc.c.s
+
+CMakeFiles/utlib.dir/utilities/strsub.c.o: CMakeFiles/utlib.dir/flags.make
+CMakeFiles/utlib.dir/utilities/strsub.c.o: ../utilities/strsub.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lreznak-/Documents/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/utlib.dir/utilities/strsub.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/utlib.dir/utilities/strsub.c.o   -c /Users/lreznak-/Documents/push_swap/utilities/strsub.c
+
+CMakeFiles/utlib.dir/utilities/strsub.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/utlib.dir/utilities/strsub.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/lreznak-/Documents/push_swap/utilities/strsub.c > CMakeFiles/utlib.dir/utilities/strsub.c.i
+
+CMakeFiles/utlib.dir/utilities/strsub.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/utlib.dir/utilities/strsub.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/lreznak-/Documents/push_swap/utilities/strsub.c -o CMakeFiles/utlib.dir/utilities/strsub.c.s
+
+CMakeFiles/utlib.dir/utilities/strncpy.c.o: CMakeFiles/utlib.dir/flags.make
+CMakeFiles/utlib.dir/utilities/strncpy.c.o: ../utilities/strncpy.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lreznak-/Documents/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/utlib.dir/utilities/strncpy.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/utlib.dir/utilities/strncpy.c.o   -c /Users/lreznak-/Documents/push_swap/utilities/strncpy.c
+
+CMakeFiles/utlib.dir/utilities/strncpy.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/utlib.dir/utilities/strncpy.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/lreznak-/Documents/push_swap/utilities/strncpy.c > CMakeFiles/utlib.dir/utilities/strncpy.c.i
+
+CMakeFiles/utlib.dir/utilities/strncpy.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/utlib.dir/utilities/strncpy.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/lreznak-/Documents/push_swap/utilities/strncpy.c -o CMakeFiles/utlib.dir/utilities/strncpy.c.s
+
+CMakeFiles/utlib.dir/utilities/strnew.c.o: CMakeFiles/utlib.dir/flags.make
+CMakeFiles/utlib.dir/utilities/strnew.c.o: ../utilities/strnew.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lreznak-/Documents/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/utlib.dir/utilities/strnew.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/utlib.dir/utilities/strnew.c.o   -c /Users/lreznak-/Documents/push_swap/utilities/strnew.c
+
+CMakeFiles/utlib.dir/utilities/strnew.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/utlib.dir/utilities/strnew.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/lreznak-/Documents/push_swap/utilities/strnew.c > CMakeFiles/utlib.dir/utilities/strnew.c.i
+
+CMakeFiles/utlib.dir/utilities/strnew.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/utlib.dir/utilities/strnew.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/lreznak-/Documents/push_swap/utilities/strnew.c -o CMakeFiles/utlib.dir/utilities/strnew.c.s
+
+CMakeFiles/utlib.dir/utilities/memset.c.o: CMakeFiles/utlib.dir/flags.make
+CMakeFiles/utlib.dir/utilities/memset.c.o: ../utilities/memset.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lreznak-/Documents/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/utlib.dir/utilities/memset.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/utlib.dir/utilities/memset.c.o   -c /Users/lreznak-/Documents/push_swap/utilities/memset.c
+
+CMakeFiles/utlib.dir/utilities/memset.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/utlib.dir/utilities/memset.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/lreznak-/Documents/push_swap/utilities/memset.c > CMakeFiles/utlib.dir/utilities/memset.c.i
+
+CMakeFiles/utlib.dir/utilities/memset.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/utlib.dir/utilities/memset.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/lreznak-/Documents/push_swap/utilities/memset.c -o CMakeFiles/utlib.dir/utilities/memset.c.s
+
+CMakeFiles/utlib.dir/utilities/charptrptrdel.c.o: CMakeFiles/utlib.dir/flags.make
+CMakeFiles/utlib.dir/utilities/charptrptrdel.c.o: ../utilities/charptrptrdel.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lreznak-/Documents/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/utlib.dir/utilities/charptrptrdel.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/utlib.dir/utilities/charptrptrdel.c.o   -c /Users/lreznak-/Documents/push_swap/utilities/charptrptrdel.c
+
+CMakeFiles/utlib.dir/utilities/charptrptrdel.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/utlib.dir/utilities/charptrptrdel.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/lreznak-/Documents/push_swap/utilities/charptrptrdel.c > CMakeFiles/utlib.dir/utilities/charptrptrdel.c.i
+
+CMakeFiles/utlib.dir/utilities/charptrptrdel.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/utlib.dir/utilities/charptrptrdel.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/lreznak-/Documents/push_swap/utilities/charptrptrdel.c -o CMakeFiles/utlib.dir/utilities/charptrptrdel.c.s
+
+CMakeFiles/utlib.dir/utilities/strcmp.c.o: CMakeFiles/utlib.dir/flags.make
+CMakeFiles/utlib.dir/utilities/strcmp.c.o: ../utilities/strcmp.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lreznak-/Documents/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/utlib.dir/utilities/strcmp.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/utlib.dir/utilities/strcmp.c.o   -c /Users/lreznak-/Documents/push_swap/utilities/strcmp.c
+
+CMakeFiles/utlib.dir/utilities/strcmp.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/utlib.dir/utilities/strcmp.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/lreznak-/Documents/push_swap/utilities/strcmp.c > CMakeFiles/utlib.dir/utilities/strcmp.c.i
+
+CMakeFiles/utlib.dir/utilities/strcmp.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/utlib.dir/utilities/strcmp.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/lreznak-/Documents/push_swap/utilities/strcmp.c -o CMakeFiles/utlib.dir/utilities/strcmp.c.s
+
 # Object files for target utlib
 utlib_OBJECTS = \
 "CMakeFiles/utlib.dir/utilities/ft_atoi.c.o" \
-"CMakeFiles/utlib.dir/utilities/ft_itoa.c.o"
+"CMakeFiles/utlib.dir/utilities/ft_itoa.c.o" \
+"CMakeFiles/utlib.dir/utilities/strsplitchrset.c.o" \
+"CMakeFiles/utlib.dir/utilities/xmalloc.c.o" \
+"CMakeFiles/utlib.dir/utilities/strsub.c.o" \
+"CMakeFiles/utlib.dir/utilities/strncpy.c.o" \
+"CMakeFiles/utlib.dir/utilities/strnew.c.o" \
+"CMakeFiles/utlib.dir/utilities/memset.c.o" \
+"CMakeFiles/utlib.dir/utilities/charptrptrdel.c.o" \
+"CMakeFiles/utlib.dir/utilities/strcmp.c.o"
 
 # External object files for target utlib
 utlib_EXTERNAL_OBJECTS =
 
 libutlib.a: CMakeFiles/utlib.dir/utilities/ft_atoi.c.o
 libutlib.a: CMakeFiles/utlib.dir/utilities/ft_itoa.c.o
+libutlib.a: CMakeFiles/utlib.dir/utilities/strsplitchrset.c.o
+libutlib.a: CMakeFiles/utlib.dir/utilities/xmalloc.c.o
+libutlib.a: CMakeFiles/utlib.dir/utilities/strsub.c.o
+libutlib.a: CMakeFiles/utlib.dir/utilities/strncpy.c.o
+libutlib.a: CMakeFiles/utlib.dir/utilities/strnew.c.o
+libutlib.a: CMakeFiles/utlib.dir/utilities/memset.c.o
+libutlib.a: CMakeFiles/utlib.dir/utilities/charptrptrdel.c.o
+libutlib.a: CMakeFiles/utlib.dir/utilities/strcmp.c.o
 libutlib.a: CMakeFiles/utlib.dir/build.make
 libutlib.a: CMakeFiles/utlib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/lreznak-/Documents/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C static library libutlib.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/lreznak-/Documents/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking C static library libutlib.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/utlib.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/utlib.dir/link.txt --verbose=$(VERBOSE)
 

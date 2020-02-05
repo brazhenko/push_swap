@@ -2,6 +2,10 @@
 
 # include <stddef.h>
 # include <stdint.h>
+
+# define TRUE					1
+# define FALSE					0
+
 # define PUSHSWAP_H
 
 # define PSTACK_INIT_CAPACITY	10
@@ -9,8 +13,8 @@
 # define PSTACK_TYPE			uint32_t
 
 /*
- * Errors
- */
+** Errors
+*/
 
 # define PS_OK					0
 # define PS_NOT_ENOUGH_ELEMS	1
@@ -36,7 +40,8 @@ void			stack_print(t_pstack *pstack);
 int 			stack_rev_rot(t_pstack *stack);
 int 			stack_rot(t_pstack *stack);
 int				is_there_(t_pstack *stack, PSTACK_TYPE el);
-
+void			parse_argv(int ac, char **av);
+void			error_exit(void);
 /*
  * game wrapping
  */
@@ -44,8 +49,8 @@ int				is_there_(t_pstack *stack, PSTACK_TYPE el);
 # define PUSH_SWAP_COMMAND_COUNT	11
 # define MAX_OPER_LEN				4
 
-t_pstack		*_a(void);
-t_pstack		*_b(void);
+t_pstack		*a__(void);
+t_pstack		*b__(void);
 void 			sa(void);
 void 			sb(void);
 void 			ss(void);

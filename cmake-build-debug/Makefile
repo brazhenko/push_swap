@@ -203,6 +203,141 @@ push_swap_lib/game_wrapper.c.s:
 	$(MAKE) -f CMakeFiles/push_swap_lib.dir/build.make CMakeFiles/push_swap_lib.dir/push_swap_lib/game_wrapper.c.s
 .PHONY : push_swap_lib/game_wrapper.c.s
 
+push_swap_lib/game_wrapper2.o: push_swap_lib/game_wrapper2.c.o
+
+.PHONY : push_swap_lib/game_wrapper2.o
+
+# target to build an object file
+push_swap_lib/game_wrapper2.c.o:
+	$(MAKE) -f CMakeFiles/push_swap_lib.dir/build.make CMakeFiles/push_swap_lib.dir/push_swap_lib/game_wrapper2.c.o
+.PHONY : push_swap_lib/game_wrapper2.c.o
+
+push_swap_lib/game_wrapper2.i: push_swap_lib/game_wrapper2.c.i
+
+.PHONY : push_swap_lib/game_wrapper2.i
+
+# target to preprocess a source file
+push_swap_lib/game_wrapper2.c.i:
+	$(MAKE) -f CMakeFiles/push_swap_lib.dir/build.make CMakeFiles/push_swap_lib.dir/push_swap_lib/game_wrapper2.c.i
+.PHONY : push_swap_lib/game_wrapper2.c.i
+
+push_swap_lib/game_wrapper2.s: push_swap_lib/game_wrapper2.c.s
+
+.PHONY : push_swap_lib/game_wrapper2.s
+
+# target to generate assembly for a file
+push_swap_lib/game_wrapper2.c.s:
+	$(MAKE) -f CMakeFiles/push_swap_lib.dir/build.make CMakeFiles/push_swap_lib.dir/push_swap_lib/game_wrapper2.c.s
+.PHONY : push_swap_lib/game_wrapper2.c.s
+
+push_swap_lib/game_wrapper3.o: push_swap_lib/game_wrapper3.c.o
+
+.PHONY : push_swap_lib/game_wrapper3.o
+
+# target to build an object file
+push_swap_lib/game_wrapper3.c.o:
+	$(MAKE) -f CMakeFiles/push_swap_lib.dir/build.make CMakeFiles/push_swap_lib.dir/push_swap_lib/game_wrapper3.c.o
+.PHONY : push_swap_lib/game_wrapper3.c.o
+
+push_swap_lib/game_wrapper3.i: push_swap_lib/game_wrapper3.c.i
+
+.PHONY : push_swap_lib/game_wrapper3.i
+
+# target to preprocess a source file
+push_swap_lib/game_wrapper3.c.i:
+	$(MAKE) -f CMakeFiles/push_swap_lib.dir/build.make CMakeFiles/push_swap_lib.dir/push_swap_lib/game_wrapper3.c.i
+.PHONY : push_swap_lib/game_wrapper3.c.i
+
+push_swap_lib/game_wrapper3.s: push_swap_lib/game_wrapper3.c.s
+
+.PHONY : push_swap_lib/game_wrapper3.s
+
+# target to generate assembly for a file
+push_swap_lib/game_wrapper3.c.s:
+	$(MAKE) -f CMakeFiles/push_swap_lib.dir/build.make CMakeFiles/push_swap_lib.dir/push_swap_lib/game_wrapper3.c.s
+.PHONY : push_swap_lib/game_wrapper3.c.s
+
+push_swap_lib/game_wrapper4.o: push_swap_lib/game_wrapper4.c.o
+
+.PHONY : push_swap_lib/game_wrapper4.o
+
+# target to build an object file
+push_swap_lib/game_wrapper4.c.o:
+	$(MAKE) -f CMakeFiles/push_swap_lib.dir/build.make CMakeFiles/push_swap_lib.dir/push_swap_lib/game_wrapper4.c.o
+.PHONY : push_swap_lib/game_wrapper4.c.o
+
+push_swap_lib/game_wrapper4.i: push_swap_lib/game_wrapper4.c.i
+
+.PHONY : push_swap_lib/game_wrapper4.i
+
+# target to preprocess a source file
+push_swap_lib/game_wrapper4.c.i:
+	$(MAKE) -f CMakeFiles/push_swap_lib.dir/build.make CMakeFiles/push_swap_lib.dir/push_swap_lib/game_wrapper4.c.i
+.PHONY : push_swap_lib/game_wrapper4.c.i
+
+push_swap_lib/game_wrapper4.s: push_swap_lib/game_wrapper4.c.s
+
+.PHONY : push_swap_lib/game_wrapper4.s
+
+# target to generate assembly for a file
+push_swap_lib/game_wrapper4.c.s:
+	$(MAKE) -f CMakeFiles/push_swap_lib.dir/build.make CMakeFiles/push_swap_lib.dir/push_swap_lib/game_wrapper4.c.s
+.PHONY : push_swap_lib/game_wrapper4.c.s
+
+push_swap_lib/game_wrapper5.o: push_swap_lib/game_wrapper5.c.o
+
+.PHONY : push_swap_lib/game_wrapper5.o
+
+# target to build an object file
+push_swap_lib/game_wrapper5.c.o:
+	$(MAKE) -f CMakeFiles/push_swap_lib.dir/build.make CMakeFiles/push_swap_lib.dir/push_swap_lib/game_wrapper5.c.o
+.PHONY : push_swap_lib/game_wrapper5.c.o
+
+push_swap_lib/game_wrapper5.i: push_swap_lib/game_wrapper5.c.i
+
+.PHONY : push_swap_lib/game_wrapper5.i
+
+# target to preprocess a source file
+push_swap_lib/game_wrapper5.c.i:
+	$(MAKE) -f CMakeFiles/push_swap_lib.dir/build.make CMakeFiles/push_swap_lib.dir/push_swap_lib/game_wrapper5.c.i
+.PHONY : push_swap_lib/game_wrapper5.c.i
+
+push_swap_lib/game_wrapper5.s: push_swap_lib/game_wrapper5.c.s
+
+.PHONY : push_swap_lib/game_wrapper5.s
+
+# target to generate assembly for a file
+push_swap_lib/game_wrapper5.c.s:
+	$(MAKE) -f CMakeFiles/push_swap_lib.dir/build.make CMakeFiles/push_swap_lib.dir/push_swap_lib/game_wrapper5.c.s
+.PHONY : push_swap_lib/game_wrapper5.c.s
+
+push_swap_lib/parse_argv.o: push_swap_lib/parse_argv.c.o
+
+.PHONY : push_swap_lib/parse_argv.o
+
+# target to build an object file
+push_swap_lib/parse_argv.c.o:
+	$(MAKE) -f CMakeFiles/push_swap_lib.dir/build.make CMakeFiles/push_swap_lib.dir/push_swap_lib/parse_argv.c.o
+.PHONY : push_swap_lib/parse_argv.c.o
+
+push_swap_lib/parse_argv.i: push_swap_lib/parse_argv.c.i
+
+.PHONY : push_swap_lib/parse_argv.i
+
+# target to preprocess a source file
+push_swap_lib/parse_argv.c.i:
+	$(MAKE) -f CMakeFiles/push_swap_lib.dir/build.make CMakeFiles/push_swap_lib.dir/push_swap_lib/parse_argv.c.i
+.PHONY : push_swap_lib/parse_argv.c.i
+
+push_swap_lib/parse_argv.s: push_swap_lib/parse_argv.c.s
+
+.PHONY : push_swap_lib/parse_argv.s
+
+# target to generate assembly for a file
+push_swap_lib/parse_argv.c.s:
+	$(MAKE) -f CMakeFiles/push_swap_lib.dir/build.make CMakeFiles/push_swap_lib.dir/push_swap_lib/parse_argv.c.s
+.PHONY : push_swap_lib/parse_argv.c.s
+
 push_swap_lib/pushswap.o: push_swap_lib/pushswap.c.o
 
 .PHONY : push_swap_lib/pushswap.o
@@ -256,6 +391,33 @@ sort.s: sort.c.s
 sort.c.s:
 	$(MAKE) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/sort.c.s
 .PHONY : sort.c.s
+
+utilities/charptrptrdel.o: utilities/charptrptrdel.c.o
+
+.PHONY : utilities/charptrptrdel.o
+
+# target to build an object file
+utilities/charptrptrdel.c.o:
+	$(MAKE) -f CMakeFiles/utlib.dir/build.make CMakeFiles/utlib.dir/utilities/charptrptrdel.c.o
+.PHONY : utilities/charptrptrdel.c.o
+
+utilities/charptrptrdel.i: utilities/charptrptrdel.c.i
+
+.PHONY : utilities/charptrptrdel.i
+
+# target to preprocess a source file
+utilities/charptrptrdel.c.i:
+	$(MAKE) -f CMakeFiles/utlib.dir/build.make CMakeFiles/utlib.dir/utilities/charptrptrdel.c.i
+.PHONY : utilities/charptrptrdel.c.i
+
+utilities/charptrptrdel.s: utilities/charptrptrdel.c.s
+
+.PHONY : utilities/charptrptrdel.s
+
+# target to generate assembly for a file
+utilities/charptrptrdel.c.s:
+	$(MAKE) -f CMakeFiles/utlib.dir/build.make CMakeFiles/utlib.dir/utilities/charptrptrdel.c.s
+.PHONY : utilities/charptrptrdel.c.s
 
 utilities/ft_atoi.o: utilities/ft_atoi.c.o
 
@@ -311,6 +473,195 @@ utilities/ft_itoa.c.s:
 	$(MAKE) -f CMakeFiles/utlib.dir/build.make CMakeFiles/utlib.dir/utilities/ft_itoa.c.s
 .PHONY : utilities/ft_itoa.c.s
 
+utilities/memset.o: utilities/memset.c.o
+
+.PHONY : utilities/memset.o
+
+# target to build an object file
+utilities/memset.c.o:
+	$(MAKE) -f CMakeFiles/utlib.dir/build.make CMakeFiles/utlib.dir/utilities/memset.c.o
+.PHONY : utilities/memset.c.o
+
+utilities/memset.i: utilities/memset.c.i
+
+.PHONY : utilities/memset.i
+
+# target to preprocess a source file
+utilities/memset.c.i:
+	$(MAKE) -f CMakeFiles/utlib.dir/build.make CMakeFiles/utlib.dir/utilities/memset.c.i
+.PHONY : utilities/memset.c.i
+
+utilities/memset.s: utilities/memset.c.s
+
+.PHONY : utilities/memset.s
+
+# target to generate assembly for a file
+utilities/memset.c.s:
+	$(MAKE) -f CMakeFiles/utlib.dir/build.make CMakeFiles/utlib.dir/utilities/memset.c.s
+.PHONY : utilities/memset.c.s
+
+utilities/strcmp.o: utilities/strcmp.c.o
+
+.PHONY : utilities/strcmp.o
+
+# target to build an object file
+utilities/strcmp.c.o:
+	$(MAKE) -f CMakeFiles/utlib.dir/build.make CMakeFiles/utlib.dir/utilities/strcmp.c.o
+.PHONY : utilities/strcmp.c.o
+
+utilities/strcmp.i: utilities/strcmp.c.i
+
+.PHONY : utilities/strcmp.i
+
+# target to preprocess a source file
+utilities/strcmp.c.i:
+	$(MAKE) -f CMakeFiles/utlib.dir/build.make CMakeFiles/utlib.dir/utilities/strcmp.c.i
+.PHONY : utilities/strcmp.c.i
+
+utilities/strcmp.s: utilities/strcmp.c.s
+
+.PHONY : utilities/strcmp.s
+
+# target to generate assembly for a file
+utilities/strcmp.c.s:
+	$(MAKE) -f CMakeFiles/utlib.dir/build.make CMakeFiles/utlib.dir/utilities/strcmp.c.s
+.PHONY : utilities/strcmp.c.s
+
+utilities/strncpy.o: utilities/strncpy.c.o
+
+.PHONY : utilities/strncpy.o
+
+# target to build an object file
+utilities/strncpy.c.o:
+	$(MAKE) -f CMakeFiles/utlib.dir/build.make CMakeFiles/utlib.dir/utilities/strncpy.c.o
+.PHONY : utilities/strncpy.c.o
+
+utilities/strncpy.i: utilities/strncpy.c.i
+
+.PHONY : utilities/strncpy.i
+
+# target to preprocess a source file
+utilities/strncpy.c.i:
+	$(MAKE) -f CMakeFiles/utlib.dir/build.make CMakeFiles/utlib.dir/utilities/strncpy.c.i
+.PHONY : utilities/strncpy.c.i
+
+utilities/strncpy.s: utilities/strncpy.c.s
+
+.PHONY : utilities/strncpy.s
+
+# target to generate assembly for a file
+utilities/strncpy.c.s:
+	$(MAKE) -f CMakeFiles/utlib.dir/build.make CMakeFiles/utlib.dir/utilities/strncpy.c.s
+.PHONY : utilities/strncpy.c.s
+
+utilities/strnew.o: utilities/strnew.c.o
+
+.PHONY : utilities/strnew.o
+
+# target to build an object file
+utilities/strnew.c.o:
+	$(MAKE) -f CMakeFiles/utlib.dir/build.make CMakeFiles/utlib.dir/utilities/strnew.c.o
+.PHONY : utilities/strnew.c.o
+
+utilities/strnew.i: utilities/strnew.c.i
+
+.PHONY : utilities/strnew.i
+
+# target to preprocess a source file
+utilities/strnew.c.i:
+	$(MAKE) -f CMakeFiles/utlib.dir/build.make CMakeFiles/utlib.dir/utilities/strnew.c.i
+.PHONY : utilities/strnew.c.i
+
+utilities/strnew.s: utilities/strnew.c.s
+
+.PHONY : utilities/strnew.s
+
+# target to generate assembly for a file
+utilities/strnew.c.s:
+	$(MAKE) -f CMakeFiles/utlib.dir/build.make CMakeFiles/utlib.dir/utilities/strnew.c.s
+.PHONY : utilities/strnew.c.s
+
+utilities/strsplitchrset.o: utilities/strsplitchrset.c.o
+
+.PHONY : utilities/strsplitchrset.o
+
+# target to build an object file
+utilities/strsplitchrset.c.o:
+	$(MAKE) -f CMakeFiles/utlib.dir/build.make CMakeFiles/utlib.dir/utilities/strsplitchrset.c.o
+.PHONY : utilities/strsplitchrset.c.o
+
+utilities/strsplitchrset.i: utilities/strsplitchrset.c.i
+
+.PHONY : utilities/strsplitchrset.i
+
+# target to preprocess a source file
+utilities/strsplitchrset.c.i:
+	$(MAKE) -f CMakeFiles/utlib.dir/build.make CMakeFiles/utlib.dir/utilities/strsplitchrset.c.i
+.PHONY : utilities/strsplitchrset.c.i
+
+utilities/strsplitchrset.s: utilities/strsplitchrset.c.s
+
+.PHONY : utilities/strsplitchrset.s
+
+# target to generate assembly for a file
+utilities/strsplitchrset.c.s:
+	$(MAKE) -f CMakeFiles/utlib.dir/build.make CMakeFiles/utlib.dir/utilities/strsplitchrset.c.s
+.PHONY : utilities/strsplitchrset.c.s
+
+utilities/strsub.o: utilities/strsub.c.o
+
+.PHONY : utilities/strsub.o
+
+# target to build an object file
+utilities/strsub.c.o:
+	$(MAKE) -f CMakeFiles/utlib.dir/build.make CMakeFiles/utlib.dir/utilities/strsub.c.o
+.PHONY : utilities/strsub.c.o
+
+utilities/strsub.i: utilities/strsub.c.i
+
+.PHONY : utilities/strsub.i
+
+# target to preprocess a source file
+utilities/strsub.c.i:
+	$(MAKE) -f CMakeFiles/utlib.dir/build.make CMakeFiles/utlib.dir/utilities/strsub.c.i
+.PHONY : utilities/strsub.c.i
+
+utilities/strsub.s: utilities/strsub.c.s
+
+.PHONY : utilities/strsub.s
+
+# target to generate assembly for a file
+utilities/strsub.c.s:
+	$(MAKE) -f CMakeFiles/utlib.dir/build.make CMakeFiles/utlib.dir/utilities/strsub.c.s
+.PHONY : utilities/strsub.c.s
+
+utilities/xmalloc.o: utilities/xmalloc.c.o
+
+.PHONY : utilities/xmalloc.o
+
+# target to build an object file
+utilities/xmalloc.c.o:
+	$(MAKE) -f CMakeFiles/utlib.dir/build.make CMakeFiles/utlib.dir/utilities/xmalloc.c.o
+.PHONY : utilities/xmalloc.c.o
+
+utilities/xmalloc.i: utilities/xmalloc.c.i
+
+.PHONY : utilities/xmalloc.i
+
+# target to preprocess a source file
+utilities/xmalloc.c.i:
+	$(MAKE) -f CMakeFiles/utlib.dir/build.make CMakeFiles/utlib.dir/utilities/xmalloc.c.i
+.PHONY : utilities/xmalloc.c.i
+
+utilities/xmalloc.s: utilities/xmalloc.c.s
+
+.PHONY : utilities/xmalloc.s
+
+# target to generate assembly for a file
+utilities/xmalloc.c.s:
+	$(MAKE) -f CMakeFiles/utlib.dir/build.make CMakeFiles/utlib.dir/utilities/xmalloc.c.s
+.PHONY : utilities/xmalloc.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -328,18 +679,57 @@ help:
 	@echo "... push_swap_lib/game_wrapper.o"
 	@echo "... push_swap_lib/game_wrapper.i"
 	@echo "... push_swap_lib/game_wrapper.s"
+	@echo "... push_swap_lib/game_wrapper2.o"
+	@echo "... push_swap_lib/game_wrapper2.i"
+	@echo "... push_swap_lib/game_wrapper2.s"
+	@echo "... push_swap_lib/game_wrapper3.o"
+	@echo "... push_swap_lib/game_wrapper3.i"
+	@echo "... push_swap_lib/game_wrapper3.s"
+	@echo "... push_swap_lib/game_wrapper4.o"
+	@echo "... push_swap_lib/game_wrapper4.i"
+	@echo "... push_swap_lib/game_wrapper4.s"
+	@echo "... push_swap_lib/game_wrapper5.o"
+	@echo "... push_swap_lib/game_wrapper5.i"
+	@echo "... push_swap_lib/game_wrapper5.s"
+	@echo "... push_swap_lib/parse_argv.o"
+	@echo "... push_swap_lib/parse_argv.i"
+	@echo "... push_swap_lib/parse_argv.s"
 	@echo "... push_swap_lib/pushswap.o"
 	@echo "... push_swap_lib/pushswap.i"
 	@echo "... push_swap_lib/pushswap.s"
 	@echo "... sort.o"
 	@echo "... sort.i"
 	@echo "... sort.s"
+	@echo "... utilities/charptrptrdel.o"
+	@echo "... utilities/charptrptrdel.i"
+	@echo "... utilities/charptrptrdel.s"
 	@echo "... utilities/ft_atoi.o"
 	@echo "... utilities/ft_atoi.i"
 	@echo "... utilities/ft_atoi.s"
 	@echo "... utilities/ft_itoa.o"
 	@echo "... utilities/ft_itoa.i"
 	@echo "... utilities/ft_itoa.s"
+	@echo "... utilities/memset.o"
+	@echo "... utilities/memset.i"
+	@echo "... utilities/memset.s"
+	@echo "... utilities/strcmp.o"
+	@echo "... utilities/strcmp.i"
+	@echo "... utilities/strcmp.s"
+	@echo "... utilities/strncpy.o"
+	@echo "... utilities/strncpy.i"
+	@echo "... utilities/strncpy.s"
+	@echo "... utilities/strnew.o"
+	@echo "... utilities/strnew.i"
+	@echo "... utilities/strnew.s"
+	@echo "... utilities/strsplitchrset.o"
+	@echo "... utilities/strsplitchrset.i"
+	@echo "... utilities/strsplitchrset.s"
+	@echo "... utilities/strsub.o"
+	@echo "... utilities/strsub.i"
+	@echo "... utilities/strsub.s"
+	@echo "... utilities/xmalloc.o"
+	@echo "... utilities/xmalloc.i"
+	@echo "... utilities/xmalloc.s"
 .PHONY : help
 
 

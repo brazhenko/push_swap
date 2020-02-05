@@ -176,6 +176,21 @@
 		<Unit filename="/Users/lreznak-/Documents/push_swap/push_swap_lib/game_wrapper.c">
 			<Option target="push_swap_lib"/>
 		</Unit>
+		<Unit filename="/Users/lreznak-/Documents/push_swap/push_swap_lib/game_wrapper2.c">
+			<Option target="push_swap_lib"/>
+		</Unit>
+		<Unit filename="/Users/lreznak-/Documents/push_swap/push_swap_lib/game_wrapper3.c">
+			<Option target="push_swap_lib"/>
+		</Unit>
+		<Unit filename="/Users/lreznak-/Documents/push_swap/push_swap_lib/game_wrapper4.c">
+			<Option target="push_swap_lib"/>
+		</Unit>
+		<Unit filename="/Users/lreznak-/Documents/push_swap/push_swap_lib/game_wrapper5.c">
+			<Option target="push_swap_lib"/>
+		</Unit>
+		<Unit filename="/Users/lreznak-/Documents/push_swap/push_swap_lib/parse_argv.c">
+			<Option target="push_swap_lib"/>
+		</Unit>
 		<Unit filename="/Users/lreznak-/Documents/push_swap/push_swap_lib/pushswap.c">
 			<Option target="push_swap_lib"/>
 		</Unit>
@@ -188,13 +203,37 @@
 		<Unit filename="/Users/lreznak-/Documents/push_swap/sorter.h">
 			<Option target="push"/>
 		</Unit>
+		<Unit filename="/Users/lreznak-/Documents/push_swap/utilities/charptrptrdel.c">
+			<Option target="utlib"/>
+		</Unit>
 		<Unit filename="/Users/lreznak-/Documents/push_swap/utilities/ft_atoi.c">
 			<Option target="utlib"/>
 		</Unit>
 		<Unit filename="/Users/lreznak-/Documents/push_swap/utilities/ft_itoa.c">
 			<Option target="utlib"/>
 		</Unit>
+		<Unit filename="/Users/lreznak-/Documents/push_swap/utilities/memset.c">
+			<Option target="utlib"/>
+		</Unit>
+		<Unit filename="/Users/lreznak-/Documents/push_swap/utilities/strcmp.c">
+			<Option target="utlib"/>
+		</Unit>
+		<Unit filename="/Users/lreznak-/Documents/push_swap/utilities/strncpy.c">
+			<Option target="utlib"/>
+		</Unit>
+		<Unit filename="/Users/lreznak-/Documents/push_swap/utilities/strnew.c">
+			<Option target="utlib"/>
+		</Unit>
+		<Unit filename="/Users/lreznak-/Documents/push_swap/utilities/strsplitchrset.c">
+			<Option target="utlib"/>
+		</Unit>
+		<Unit filename="/Users/lreznak-/Documents/push_swap/utilities/strsub.c">
+			<Option target="utlib"/>
+		</Unit>
 		<Unit filename="/Users/lreznak-/Documents/push_swap/utilities/utilities.h">
+			<Option target="utlib"/>
+		</Unit>
+		<Unit filename="/Users/lreznak-/Documents/push_swap/utilities/xmalloc.c">
 			<Option target="utlib"/>
 		</Unit>
 		<Unit filename="/Users/lreznak-/Documents/push_swap/CMakeLists.txt">

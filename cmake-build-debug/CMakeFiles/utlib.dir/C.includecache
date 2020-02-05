@@ -6,11 +6,33 @@
 
 #IncludeRegexTransform: 
 
-/Users/lreznak-/Documents/push_swap/utilities/ft_atoi.c
+/Users/lreznak-/Documents/push_swap/utilities/charptrptrdel.c
+stdlib.h
+-
+
+/Users/lreznak-/Documents/push_swap/utilities/strcmp.c
 stddef.h
 -
 
-/Users/lreznak-/Documents/push_swap/utilities/ft_itoa.c
+/Users/lreznak-/Documents/push_swap/utilities/strnew.c
 stdlib.h
+-
+utilities.h
+/Users/lreznak-/Documents/push_swap/utilities/utilities.h
+
+/Users/lreznak-/Documents/push_swap/utilities/strsplitchrset.c
+stddef.h
+/Users/lreznak-/Documents/push_swap/utilities/stddef.h
+utilities.h
+/Users/lreznak-/Documents/push_swap/utilities/utilities.h
+
+/Users/lreznak-/Documents/push_swap/utilities/strsub.c
+utilities.h
+/Users/lreznak-/Documents/push_swap/utilities/utilities.h
+stdlib.h
+-
+
+/Users/lreznak-/Documents/push_swap/utilities/utilities.h
+stddef.h
 -
 

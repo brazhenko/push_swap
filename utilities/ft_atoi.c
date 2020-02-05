@@ -3,7 +3,7 @@
 # define FT_ULONG_MAX	((unsigned long)(~0L))
 # define FT_LONG_MAX	((long)(FT_ULONG_MAX >> 1))
 
-static int		ft_isspace(int c)
+int		ft_isspace(int c)
 {
 	return (c == '\t' ||
 			c == '\n' ||
@@ -13,7 +13,7 @@ static int		ft_isspace(int c)
 			c == ' ');
 }
 
-static int		ft_isdigit(int c)
+int		ft_isdigit(int c)
 {
 	return (c >= '0' && c <= '9');
 }

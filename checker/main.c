@@ -97,7 +97,7 @@ int 	main(int ac, char **av)
 		{
 			// VALIDATION!
 			if (valid(av[i], &value))
-				stack_push(stack_a(), atoi(av[i]));
+				stack_push(stack_a(), ft_atoi(av[i]));
 			else
 				error_exit();
 			i--;

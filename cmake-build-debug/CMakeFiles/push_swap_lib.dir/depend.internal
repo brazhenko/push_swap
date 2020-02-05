@@ -4,6 +4,22 @@
 CMakeFiles/push_swap_lib.dir/push_swap_lib/game_wrapper.c.o
  /Users/lreznak-/Documents/push_swap/push_swap_lib/game_wrapper.c
  /Users/lreznak-/Documents/push_swap/push_swap_lib/pushswap.h
+CMakeFiles/push_swap_lib.dir/push_swap_lib/game_wrapper2.c.o
+ /Users/lreznak-/Documents/push_swap/push_swap_lib/game_wrapper2.c
+ /Users/lreznak-/Documents/push_swap/push_swap_lib/pushswap.h
+CMakeFiles/push_swap_lib.dir/push_swap_lib/game_wrapper3.c.o
+ /Users/lreznak-/Documents/push_swap/push_swap_lib/game_wrapper3.c
+ /Users/lreznak-/Documents/push_swap/push_swap_lib/pushswap.h
+CMakeFiles/push_swap_lib.dir/push_swap_lib/game_wrapper4.c.o
+ /Users/lreznak-/Documents/push_swap/push_swap_lib/game_wrapper4.c
+ /Users/lreznak-/Documents/push_swap/push_swap_lib/pushswap.h
+CMakeFiles/push_swap_lib.dir/push_swap_lib/game_wrapper5.c.o
+ /Users/lreznak-/Documents/push_swap/push_swap_lib/game_wrapper5.c
+ /Users/lreznak-/Documents/push_swap/push_swap_lib/pushswap.h
+CMakeFiles/push_swap_lib.dir/push_swap_lib/parse_argv.c.o
+ ../utilities/utilities.h
+ /Users/lreznak-/Documents/push_swap/push_swap_lib/parse_argv.c
+ /Users/lreznak-/Documents/push_swap/push_swap_lib/pushswap.h
 CMakeFiles/push_swap_lib.dir/push_swap_lib/pushswap.c.o
  /Users/lreznak-/Documents/push_swap/push_swap_lib/pushswap.c
  /Users/lreznak-/Documents/push_swap/push_swap_lib/pushswap.h
