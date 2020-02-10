@@ -68,7 +68,6 @@ cmake-build-debug/
 push_swap
 checker
 
-
 # Debug files
 *.dSYM/
 *.su

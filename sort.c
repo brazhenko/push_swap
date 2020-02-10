@@ -12,20 +12,20 @@ void		sort2(void)
 	sa_();
 }
 
-size_t		find_min_in_a()
+size_t		find_min_id_in_a()
 {
 	size_t		i;
-	size_t		minid;
+	size_t		min_id;
 
-	minid = 0;
+	min_id = 0;
 	i = 0;
 	while (i < a__()->size)
 	{
-		if (a__()->stack[i] < a__()->stack[minid])
-			minid = (i);
+		if (a__()->stack[i] < a__()->stack[min_id])
+			min_id = i;
 		i++;
 	}
-	return (minid);
+	return (min_id);
 }
 
 void	sort3(void)
@@ -78,7 +78,7 @@ size_t		find_the_ok_place_in_a(PSTACK_TYPE val)
 	}
 	if (a__()->stack[a__()->size - 1] > val && val > a__()->stack[0])
 		return (a__()->size - 1);
-	return (find_min_in_a());
+	return (find_min_id_in_a());
 }
 
 size_t		calc_min_steps_for_ok_place(PSTACK_TYPE val)
@@ -108,7 +108,9 @@ void	pop_up_from_a(size_t num)
 	else
 	{
 		while (a__()->stack[a__()->size - 1] != el)
+		{
 			ra_();
+		}
 	}
 }
 
@@ -172,24 +174,52 @@ void	fill_one(void)
 	i = 1;
 	while (i < b__()->size)
 	{
-		min_steps_count_tmp = (i > (b__()->size / 2) ?(b__()->size - i - 1)
+		min_steps_count_tmp = (i > (b__()->size / 2) ? (b__()->size - i - 1)
 		: (i + 1)) + (1) + calc_min_steps_for_ok_place(b__()->stack[i]);
 		if (min_steps_count_tmp < min_steps_count)
 			min_steps_count_num = i;
 		i++;
 	}
-	//pop_up_from_b(min_steps_count_num);
-	//pop_up_from_a(find_the_ok_place_in_a(b__()->stack[b__()->size - 1]));
-	pop_from_a_and_b(min_steps_count_num,
-			find_the_ok_place_in_a(b__()->stack[b__()->size - 1]));
+	pop_up_from_b(min_steps_count_num);
+	pop_up_from_a(find_the_ok_place_in_a(b__()->stack[b__()->size - 1]));
+	// pop_from_a_and_b(min_steps_count_num, find_the_ok_place_in_a(b__()->stack[b__()->size - 1]));
 	pa_();
+}
+
+//---------------------------fill_one2------------------------------------------
+
+size_t		calc_shortes_way_len(size_t a, size_t b)
+{
+
+}
+
+/*
+ * min[0] - iterator, min[1] - number of the element needs minimum operations,
+ * to put from b to a.
+ * min[2] - ok place in a, min[3] - current minimum steps, min[4] - global
+ * minimum steps,
+ */
+
+void		fill_one2(void)
+{
+	size_t		min[4];
+	size_t		a;
+
+	min[0] = 0;
+	min[1] = 0;
+	while (min[0] < b__()->size)
+	{
+		a = find_the_ok_place_in_a(b__()->stack[min[0]]);
+
+		min[0]++;
+	}
 }
 
 void		normalize()
 {
 	size_t		i;
 
-	i = find_min_in_a();
+	i = find_min_id_in_a();
 	pop_up_from_a(i);
 }
 
@@ -206,6 +236,7 @@ void		sortelse(void)
 
 void 	sort(void)
 {
+	//show();
 	if (a__()->size == 1 || check())
 		return ;
 	else if (a__()->size == 2)
@@ -214,4 +245,5 @@ void 	sort(void)
 		sort3();
 	else
 		sortelse();
+	//show();
 }

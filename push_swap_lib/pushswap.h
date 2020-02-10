@@ -10,7 +10,7 @@
 
 # define PSTACK_INIT_CAPACITY	10
 # define PSTACK_EXTRA_CAPACITY	20
-# define PSTACK_TYPE			uint32_t
+# define PSTACK_TYPE			int32_t
 
 /*
 ** Errors

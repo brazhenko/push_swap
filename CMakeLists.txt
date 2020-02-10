@@ -48,6 +48,6 @@ add_library(utlib STATIC ${UTILITIES_SRC} ${UTILITIES_INC})
 include_directories(utilities)
 
 add_executable(${PROJECT_NAME} main.c sort.c sorter.h)
-#add_executable(${PROJECT_NAME} check/main.c check/error.c  check/checker.h)
+#add_executable(checker1 check/main.c check/error.c  check/checker.h)
 
 target_link_libraries(${PROJECT_NAME} push_swap_lib utlib)
