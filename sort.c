@@ -150,7 +150,7 @@ void	pop_from_a_and_b(size_t a_id, size_t b_id)
 		{
 			a_id++;
 			b_id++;
-			printf("%d -- %d\n", a_id, b_id);
+			printf("%zu -- %zu\n", a_id, b_id);
 			fflush(stdout);
 			rr_();
 		}

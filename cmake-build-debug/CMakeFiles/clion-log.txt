@@ -1,4 +1,0 @@
-/Users/lreznak-/.brew/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/lreznak-/Documents/push_swap
--- Configuring done
--- Generating done
--- Build files have been written to: /Users/lreznak-/Documents/push_swap/cmake-build-debug

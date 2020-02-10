@@ -1,1 +1,0 @@
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/push.dir/main.c.o CMakeFiles/push.dir/sort.c.o  -o push libpush_swap_lib.a libutlib.a 

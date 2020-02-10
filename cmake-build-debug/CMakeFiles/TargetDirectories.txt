@@ -1,5 +1,0 @@
-/Users/lreznak-/Documents/push_swap/cmake-build-debug/CMakeFiles/push.dir
-/Users/lreznak-/Documents/push_swap/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/lreznak-/Documents/push_swap/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/lreznak-/Documents/push_swap/cmake-build-debug/CMakeFiles/utlib.dir
-/Users/lreznak-/Documents/push_swap/cmake-build-debug/CMakeFiles/push_swap_lib.dir
