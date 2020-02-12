@@ -1,6 +1,6 @@
 #include <stddef.h>
 #include "utilities.h"
-#include "pushswap.h"
+#include "pstack.h"
 #include <stdlib.h>
 #include <stdio.h>
 

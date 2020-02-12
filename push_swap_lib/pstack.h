@@ -22,12 +22,15 @@
 # define PS_STACK_NULLPTR		3
 
 typedef struct	s_pstack t_pstack;
+
 struct	s_pstack
 {
 	PSTACK_TYPE	*stack;
 	size_t		size;
 	size_t		capacity;
 };
+
+
 
 t_pstack		*init_stack(void);
 void 			destroy_stack(t_pstack *stack);
@@ -47,11 +50,9 @@ void			error_exit(void);
 ** game wrapping
 */
 
-# define PUSH_SWAP_COMMAND_COUNT	11
-# define MAX_OPER_LEN				4
-
 t_pstack		*a__(void);
 t_pstack		*b__(void);
+
 void 			sa(void);
 void 			sb(void);
 void 			ss(void);
@@ -63,6 +64,7 @@ void 			rr(void);
 void 			rra(void);
 void 			rrb(void);
 void 			rrr(void);
+
 void 			show(void);
 int 			check(void);
 int 			check_a(void);

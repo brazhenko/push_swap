@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "push_swap_lib/pushswap.h"
+#include "../push_swap_lib/pstack.h"
 #include <string.h>
 #include <stdlib.h>
 #include <limits.h>
@@ -56,7 +56,7 @@ void	sort3(void)
 		rra_();
 }
 
-void	push_all_except_3_in_b(void)
+void		push_all_except_3_in_b(void)
 {
 	while (a__()->size != 3)
 	{
@@ -82,17 +82,6 @@ size_t		find_the_ok_place_in_a(PSTACK_TYPE val)
 	return (find_min_id_in_a());
 }
 
-size_t		calc_min_steps_for_ok_place(PSTACK_TYPE val)
-{
-	size_t		num;
-
-	num = find_the_ok_place_in_a(val);
-	if (num < a__()->size / 2)
-		return (num + 1);
-	else
-		return (a__()->size - num - 1);
-
-}
 
 void	pop_up_from_a(size_t num)
 {
@@ -114,81 +103,6 @@ void	pop_up_from_a(size_t num)
 		}
 	}
 }
-
-void	pop_up_from_b(size_t num)
-{
-	PSTACK_TYPE		el;
-
-	el = b__()->stack[num];
-	if (num < b__()->size / 2)
-	{
-		while (b__()->stack[b__()->size - 1] != el)
-		{
-			rrb_();
-		}
-	}
-	else
-	{
-		while (b__()->stack[b__()->size - 1] != el)
-		{
-			rb_();
-		}
-	}
-}
-
-void	pop_from_a_and_b(size_t a_id, size_t b_id)
-{
-	if ((a_id < a__()->size / 2) && (b_id < b__()->size / 2))
-	{
-		while (a_id != a__()->size - 1 && b_id != b__()->size - 1)
-		{
-			a_id = (a_id == 0 ? a__()->size - 1 : a_id - 1);
-			b_id = (b_id == 0 ? a__()->size - 1 : b_id - 1);
-			rrr_();
-		}
-	}
-	else if ((a_id >= a__()->size / 2) && (b_id >= b__()->size / 2))
-	{
-		while (a_id != a__()->size - 1 && b_id != b__()->size - 1)
-		{
-			a_id++;
-			b_id++;
-			printf("%zu -- %zu\n", a_id, b_id);
-			fflush(stdout);
-			rr_();
-		}
-	}
-	pop_up_from_a(a_id);
-	pop_up_from_b(b_id);
-}
-
-
-
-void	fill_one(void)
-{
-	size_t		min_steps_count;
-	size_t		min_steps_count_tmp;
-	size_t		min_steps_count_num;
-	size_t		i;
-
-	min_steps_count_num = 0;
-	min_steps_count = 1 +  1 + calc_min_steps_for_ok_place(
-			b__()->stack[min_steps_count_num]);
-	i = 1;
-	while (i < b__()->size)
-	{
-		min_steps_count_tmp = (i > (b__()->size / 2) ? (b__()->size - i - 1) : (i + 1)) + (1) + calc_min_steps_for_ok_place(b__()->stack[i]);
-		if (min_steps_count_tmp < min_steps_count)
-			min_steps_count_num = i;
-		i++;
-	}
-	pop_up_from_b(min_steps_count_num);
-	pop_up_from_a(find_the_ok_place_in_a(b__()->stack[b__()->size - 1]));
-	// pop_from_a_and_b(min_steps_count_num, find_the_ok_place_in_a(b__()->stack[b__()->size - 1]));
-	pa_();
-}
-
-
 
 //---------------------------fill_one2------------------------------------------
 
@@ -321,9 +235,7 @@ void		calc_shortest_way_len(size_t a, size_t b, size_t *arr)
 		arr[6] = arr[1];
 		arr[7] = arr[3];
 	}
-
 }
-
 
 void		fill_one2(void)
 {
@@ -363,7 +275,6 @@ void		sortelse(void)
 
 void 	sort(void)
 {
-	//show();
 	if (a__()->size == 1 || check())
 		return ;
 	else if (a__()->size == 2)
@@ -372,5 +283,4 @@ void 	sort(void)
 		sort3();
 	else
 		sortelse();
-	// show();
 }

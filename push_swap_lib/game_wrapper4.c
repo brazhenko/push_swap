@@ -1,5 +1,5 @@
 #include <zconf.h>
-#include "pushswap.h"
+#include "pstack.h"
 
 void		sa_(void)
 {

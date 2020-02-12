@@ -6,7 +6,7 @@
 #include <zconf.h>
 #include "utilities.h"
 #include "checker.h"
-#include "../push_swap_lib/pushswap.h"
+#include "../push_swap_lib/pstack.h"
 
 int 		get_next_oper(char *out)
 {

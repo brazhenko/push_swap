@@ -4,7 +4,7 @@ project(push C)
 set(CMAKE_C_STANDARD 99)
 
 set(PUSH_SWAP_LIB_SRC
-		push_swap_lib/pushswap.c
+		push_swap_lib/pstack.c
 		push_swap_lib/game_wrapper.c
 		push_swap_lib/game_wrapper2.c
 		push_swap_lib/game_wrapper3.c
@@ -16,7 +16,7 @@ set(PUSH_SWAP_LIB_SRC
 		)
 
 set(PUSH_SWAP_LIB_HEAD
-		push_swap_lib/pushswap.h
+		push_swap_lib/pstack.h
 		)
 
 add_library(push_swap_lib
@@ -47,7 +47,7 @@ add_library(utlib STATIC ${UTILITIES_SRC} ${UTILITIES_INC})
 
 include_directories(utilities)
 
-add_executable(${PROJECT_NAME} main.c sort.c sorter.h)
+add_executable(${PROJECT_NAME} push/main.c push/sort.c push/sorter.h)
 #add_executable(checker1 check/main.c check/error.c  check/checker.h)
 
 target_link_libraries(${PROJECT_NAME} push_swap_lib utlib)

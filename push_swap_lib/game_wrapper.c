@@ -1,4 +1,4 @@
-#include "pushswap.h"
+#include "pstack.h"
 #include <stdio.h>
 #include <zconf.h>
 

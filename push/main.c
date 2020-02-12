@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "push_swap_lib/pushswap.h"
+#include "../push_swap_lib/pstack.h"
 #include "utilities.h"
 #include <stdlib.h>
 #include <string.h>
