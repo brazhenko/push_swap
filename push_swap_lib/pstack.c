@@ -16,7 +16,7 @@ t_pstack		*init_stack(void)
 	t_pstack	*ret;
 
 	ret = xmalloc(sizeof(t_pstack));
-	memset(ret, 0, sizeof(*ret));
+	ft_memset(ret, 0, sizeof(*ret));
 	ret->stack = xmalloc(PSTACK_INIT_CAPACITY * sizeof(PSTACK_TYPE));
 	ret->capacity = PSTACK_INIT_CAPACITY;
 	return (ret);
@@ -33,10 +33,10 @@ void 			destroy_stack(t_pstack *stack)
 	{
 		if (stack->capacity > NUL)
 		{
-			memset(stack->stack, 0, stack->capacity * sizeof(PSTACK_TYPE));
+			ft_memset(stack->stack, 0, stack->capacity * sizeof(PSTACK_TYPE));
 			free(stack->stack);
 		}
-		memset(stack, 0, sizeof(*stack));
+		ft_memset(stack, 0, sizeof(*stack));
 		free(stack);
 	}
 }

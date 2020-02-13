@@ -13,7 +13,7 @@ int 		get_next_oper(char *out)
 	char	c;
 	size_t 	i;
 
-	memset(out, 1, MAX_OPER_LEN + 1);
+	ft_memset(out, 1, MAX_OPER_LEN + 1);
 	i = 0;
 	while (read(0, &c, 1))
 	{
