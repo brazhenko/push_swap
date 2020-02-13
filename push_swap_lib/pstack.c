@@ -54,9 +54,9 @@ int 			stack_push(t_pstack *stack, PSTACK_TYPE value)
 	else
 	{
 		tmp = stack->stack;
-		stack->stack = ptr;
 		ptr = xmalloc(stack->capacity * sizeof(PSTACK_TYPE)
 				+ PSTACK_EXTRA_CAPACITY * sizeof(PSTACK_TYPE));
+		stack->stack = ptr;
 		ft_memcpy(ptr, tmp, sizeof(PSTACK_TYPE) * stack->size);
 		ft_memset(tmp, 0, sizeof(PSTACK_TYPE) * stack->size);
 		free(tmp);
