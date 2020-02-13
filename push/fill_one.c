@@ -1,18 +1,16 @@
 #include "../push_swap_lib/pstack.h"
 #include "sorter.h"
 
-//---------------------------fill_one------------------------------------------
-
 /*
- * arr[0] - steps to shift A elem up
- * arr[1] - steps to shift A elem down
- * arr[2] - steps to shift B elem up
- * arr[3] - steps to shift B elem down
- * arr[4] - current minimum steps
- * arr[5] - current algorithm type
- * arr[6] - position in A to put on
- * arr[7] - position in B to take
- */
+** arr[0] - steps to shift A elem up
+** arr[1] - steps to shift A elem down
+** arr[2] - steps to shift B elem up
+** arr[3] - steps to shift B elem down
+** arr[4] - current minimum steps
+** arr[5] - current algorithm type
+** arr[6] - position in A to put on
+** arr[7] - position in B to take
+*/
 
 void		fill_one(void)
 {

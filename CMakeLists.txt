@@ -11,7 +11,7 @@ set(PUSH_SWAP_LIB_SRC
 		push_swap_lib/game_wrapper4.c
 		push_swap_lib/parse_argv.c
 		push_swap_lib/error.c
-		utilities/memcpy.c
+		utilities_lib/memcpy.c
 		push_swap_lib/game_wrapper5.c
 		)
 
@@ -26,28 +26,36 @@ ${PUSH_SWAP_LIB_SRC}
 ${PUSH_SWAP_LIB_HEAD})
 
 set(UTILITIES_SRC
-		utilities/ft_atoi.c
-		utilities/ft_itoa.c
-		utilities/strsplitchrset.c
-		utilities/xmalloc.c
-		utilities/strsub.c
-		utilities/strncpy.c
-		utilities/strnew.c
-		utilities/memset.c
-		utilities/charptrptrdel.c
-		utilities/strcmp.c
-		utilities/strncmp.c
-		utilities/max.c)
+		utilities_lib/ft_atoi.c
+		utilities_lib/ft_itoa.c
+		utilities_lib/strsplitchrset.c
+		utilities_lib/xmalloc.c
+		utilities_lib/strsub.c
+		utilities_lib/strncpy.c
+		utilities_lib/strnew.c
+		utilities_lib/memset.c
+		utilities_lib/charptrptrdel.c
+		utilities_lib/strcmp.c
+		utilities_lib/strncmp.c
+		utilities_lib/max.c)
 
 set(UTILITIES_INC
-	utilities/utilities.h
+		utilities_lib/utilities.h
 		)
 
 add_library(utlib STATIC ${UTILITIES_SRC} ${UTILITIES_INC})
 
-include_directories(utilities)
+include_directories(utilities_lib)
 
-add_executable(${PROJECT_NAME} push/sorter.h push/main.c push/fill_one.c  push/sort.c push/accessories.c push/calc_shortest_way_len.c push/process_put.c)
+add_executable(${PROJECT_NAME}
+		push/sorter.h
+		push/main.c
+		push/fill_one.c
+		push/sort.c
+		push/accessories.c
+		push/calc_shortest_way_len.c
+		push/process_put.c)
+
 #add_executable(checker1 check/main.c check/error.c  check/checker.h)
 
 target_link_libraries(${PROJECT_NAME} push_swap_lib utlib)
