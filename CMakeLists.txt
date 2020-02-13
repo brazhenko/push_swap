@@ -37,7 +37,7 @@ set(UTILITIES_SRC
 		utilities/charptrptrdel.c
 		utilities/strcmp.c
 		utilities/strncmp.c
-		)
+		utilities/max.c)
 
 set(UTILITIES_INC
 	utilities/utilities.h
@@ -47,7 +47,7 @@ add_library(utlib STATIC ${UTILITIES_SRC} ${UTILITIES_INC})
 
 include_directories(utilities)
 
-add_executable(${PROJECT_NAME} push/main.c push/sort.c push/sorter.h)
+add_executable(${PROJECT_NAME} push/sorter.h push/main.c push/fill_one.c  push/sort.c push/accessories.c push/calc_shortest_way_len.c push/process_put.c)
 #add_executable(checker1 check/main.c check/error.c  check/checker.h)
 
 target_link_libraries(${PROJECT_NAME} push_swap_lib utlib)

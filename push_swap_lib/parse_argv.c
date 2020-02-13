@@ -2,7 +2,6 @@
 #include "utilities.h"
 #include "pstack.h"
 #include <stdlib.h>
-#include <stdio.h>
 
 int 	valid(char *arg, int *num)
 {

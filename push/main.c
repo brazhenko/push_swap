@@ -1,9 +1,4 @@
-#include <stdio.h>
 #include "../push_swap_lib/pstack.h"
-#include "utilities.h"
-#include <stdlib.h>
-#include <string.h>
-#include <unistd.h>
 #include "sorter.h"
 
 int 	main(int ac, char **av)
