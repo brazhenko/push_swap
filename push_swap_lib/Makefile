@@ -1,4 +1,4 @@
-LIBNAME		= push_swap_lib
+LIBNAME		= push_swap_lib.a
 FLAGS		= -Wall -Wextra -Werror -pedantic -g
 CC			= clang
 
@@ -18,7 +18,7 @@ HEADERS=pstack.h
 
 OBJECTS=$(SOURCES:.c=.o)
 
-all: $(SOURCES) $(LIBNAME)
+all: $(LIBNAME)
 
 $(LIBNAME): $(OBJECTS) $(HEADERS)
 	@ar rc $(LIBNAME)  $(OBJECTS)
