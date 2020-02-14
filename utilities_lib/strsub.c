@@ -1,6 +1,4 @@
-//
-// Created by Lommy greenhands Reznak mo reznak on 2020-02-05.
-//
+
 #include "utilities.h"
 #include <stdlib.h>
 
