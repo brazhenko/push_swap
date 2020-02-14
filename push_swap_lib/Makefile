@@ -22,12 +22,12 @@ all: $(LIBNAME)
 
 $(LIBNAME): $(OBJECTS) $(HEADERS)
 	@ar rc $(LIBNAME)  $(OBJECTS)
-	@echo "push_swap_lib Compiled!"
+	@echo "push_swap_lib compiled!"
 
 .c.o:
 	@$(CC) $(CFLAGS) $< -o $@
 
-allcl: all clean
+clear: all clean
 
 clean:
 	@rm -rf $(OBJECTS)

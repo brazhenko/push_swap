@@ -27,12 +27,12 @@ all: $(SOURCES) $(LIBNAME)
 
 $(LIBNAME): $(OBJECTS) $(HEADERS)
 	@ar rc $(LIBNAME)  $(OBJECTS)
-	@echo $(LIBNAME) "Compiled!"
+	@echo $(LIBNAME) "compiled!"
 
 .c.o:
 	@$(CC) $(CFLAGS) $< -o $@
 
-allcl: all clean
+clear: all clean
 
 clean:
 	@rm -rf $(OBJECTS)

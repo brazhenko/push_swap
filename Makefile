@@ -11,7 +11,7 @@ PUSH_SWAP_LIB_DIR=push_swap_lib
 UTILITIES_LIB_DIR=utilities_lib
 
 ################################################################################
-PUSH_SWAP_CFLAGS=-c -Wall -Wextra  -I $(PUSH_SWAP_LIB_DIR) -I $(UTILITIES_LIB_DIR) -I $(PUSH_SWAP_DIR)
+PUSH_SWAP_CFLAGS=-c -Wall -Wextra -Werror -I $(PUSH_SWAP_LIB_DIR) -I $(UTILITIES_LIB_DIR) -I $(PUSH_SWAP_DIR)
 PUSH_SWAP_SOURCES=	$(PUSH_SWAP_DIR)/accessories.c \
 					$(PUSH_SWAP_DIR)/calc_shortest_way_len.c \
 					$(PUSH_SWAP_DIR)/fill_one.c \
@@ -21,7 +21,7 @@ PUSH_SWAP_SOURCES=	$(PUSH_SWAP_DIR)/accessories.c \
 PUSH_SWAP_HEADERS= $(PUSH_SWAP_DIR)/sorter.h
 PUSH_SWAP_OBJECTS=$(PUSH_SWAP_SOURCES:.c=.o)
 ################################################################################
-CHECKER_CFLAGS=-c -Wall -Wextra  -I $(PUSH_SWAP_LIB_DIR) -I $(UTILITIES_LIB_DIR) -I $(CHECKER_DIR)
+CHECKER_CFLAGS=-c -Wall -Wextra -Werror -I $(PUSH_SWAP_LIB_DIR) -I $(UTILITIES_LIB_DIR) -I $(CHECKER_DIR)
 
 CHECKER_SOURCES=$(CHECKER_DIR)/error.c \
                 $(CHECKER_DIR)/main.c
