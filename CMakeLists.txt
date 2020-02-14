@@ -47,15 +47,16 @@ add_library(utlib STATIC ${UTILITIES_SRC} ${UTILITIES_INC})
 
 include_directories(utilities_lib)
 
-add_executable(${PROJECT_NAME}
-		push/sorter.h
-		push/main.c
-		push/fill_one.c
-		push/sort.c
-		push/accessories.c
-		push/calc_shortest_way_len.c
-		push/process_put.c)
+#add_executable(${PROJECT_NAME}
+#		push/sorter.h
+#		push/main.c
+#		push/fill_one.c
+#		push/sort.c
+#		push/accessories.c
+#		push/calc_shortest_way_len.c
+#		push/process_put.c)
 
-#add_executable(checker1 check/main.c check/error.c  check/checker.h)
+add_executable(checker1 check/main.c check/error.c  check/checker.h)
 
-target_link_libraries(${PROJECT_NAME} push_swap_lib utlib)
+#target_link_libraries(${PROJECT_NAME} push_swap_lib utlib)
+target_link_libraries(checker1 push_swap_lib utlib)
