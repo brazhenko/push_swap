@@ -6,7 +6,7 @@
 /*   By: a17641238 <a17641238@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/14 11:41:16 by a17641238         #+#    #+#             */
-/*   Updated: 2020/02/14 11:41:16 by a17641238        ###   ########.fr       */
+/*   Updated: 2020/02/14 17:41:23 by lreznak-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -123,15 +123,19 @@ int 	stack_rot(t_pstack *stack)
 	PSTACK_TYPE		tmp;
 	size_t			i;
 
-	tmp = stack->stack[stack->size - 1];
-	i = stack->size - 1;
-	while (i)
+	if (stack && stack->size > 0)
 	{
-		stack->stack[i] = stack->stack[i - 1];
-		i--;
+		tmp = stack->stack[stack->size - 1];
+		i = stack->size - 1;
+		while (i)
+		{
+			stack->stack[i] = stack->stack[i - 1];
+			i--;
+		}
+		stack->stack[0] = tmp;
+		return (PS_OK);
 	}
-	stack->stack[0] = tmp;
-	return (PS_OK);
+	return (PS_STACK_EMPTY);
 }
 
 int 	stack_rev_rot(t_pstack *stack)
@@ -139,15 +143,19 @@ int 	stack_rev_rot(t_pstack *stack)
 	PSTACK_TYPE		tmp;
 	size_t			i;
 
-	tmp = stack->stack[0];
-	i = 0;
-	while (i < stack->size - 1)
+	if (stack && stack->size > 0)
 	{
-		stack->stack[i] = stack->stack[i + 1];
-		i++;
+		tmp = stack->stack[0];
+		i = 0;
+		while (i < stack->size - 1)
+		{
+			stack->stack[i] = stack->stack[i + 1];
+			i++;
+		}
+		stack->stack[stack->size - 1] = tmp;
+		return (PS_OK);
 	}
-	stack->stack[stack->size - 1] = tmp;
-	return (PS_OK);
+	return (PS_STACK_EMPTY);
 }
 
 void	stack_print(t_pstack *stack)

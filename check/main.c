@@ -6,7 +6,7 @@
 /*   By: a17641238 <a17641238@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/14 11:39:42 by a17641238         #+#    #+#             */
-/*   Updated: 2020/02/14 17:26:50 by lreznak-         ###   ########.fr       */
+/*   Updated: 2020/02/14 17:53:20 by lreznak-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,10 @@ int 		get_next_oper(char *out)
 {
 	char	c;
 	size_t 	i;
+	static int	end = 0;
 
+	if (end)
+		return (0);
 	ft_memset(out, 1, MAX_OPER_LEN + 1);
 	i = 0;
 	while (read(0, &c, 1))
@@ -38,7 +41,11 @@ int 		get_next_oper(char *out)
 		if (i >= MAX_OPER_LEN)
 			error_exit();
 	}
-	return (0);
+	if (i > 0)
+		out[i] = 0;
+	else
+		return (0);
+	return (1);
 }
 
 const char *g_v[PUSH_SWAP_COMMAND_COUNT] =
@@ -84,7 +91,6 @@ int 		main(int ac, char **av)
 //		show();
 		while (get_next_oper(oper))
 			process_oper(oper);
-
 		if (check())
 			write(STDOUT_FILENO, "OK\n", 3);
 		else
