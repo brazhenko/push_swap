@@ -2,7 +2,6 @@ LIBNAME		= libutils.a
 FLAGS		= -Wall -Wextra -Werror -pedantic -g
 CC			= clang
 
-CC			= gcc
 CFLAGS		= -c -Wall -Wextra -Werror -I ../utilities_lib
 LDFLAGS=
 SOURCES=charptrptrdel.c \
