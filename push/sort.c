@@ -59,7 +59,7 @@ void		sortelse(void)
 	normalize();
 }
 
-void 	sort(void)
+void		sort(void)
 {
 	if (a__()->size == 1 || check())
 		return ;

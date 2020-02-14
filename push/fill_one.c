@@ -37,6 +37,5 @@ void		fill_one(void)
 		calc_shortest_way_len(find_the_ok_place_in_a(b__()->stack[i]), i, arr);
 		i++;
 	}
-	// printf("shortest way: %zu, %zu, vals:%d, %d, count %zu\n", arr[6], arr[7], a__()->stack[arr[6]], b__()->stack[arr[7]], arr[4]);
 	process_put(arr);
 }

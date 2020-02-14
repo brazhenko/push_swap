@@ -6,7 +6,7 @@
 /*   By: a17641238 <a17641238@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/14 11:40:42 by a17641238         #+#    #+#             */
-/*   Updated: 2020/02/14 17:26:50 by lreznak-         ###   ########.fr       */
+/*   Updated: 2020/02/14 18:42:22 by lreznak-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ t_pstack	*b__(void)
 
 void		kill(void)
 {
-	static int 		killed = FALSE;
+	static int		killed = FALSE;
 
 	if (!killed)
 	{
@@ -52,7 +52,7 @@ void		kill(void)
 	}
 }
 
-int 	check_a(void)
+int			check_a(void)
 {
 	size_t		i;
 
@@ -66,7 +66,7 @@ int 	check_a(void)
 	return (TRUE);
 }
 
-int 	check(void)
+int			check(void)
 {
 	size_t		i;
 
@@ -83,14 +83,3 @@ int 	check(void)
 	}
 	return (FALSE);
 }
-
-void 		show(void)
-{
-	printf("STACK A: size %zu, capacity %zu\n",
-			a__()->size, a__()->capacity);
-	printf("STACK B: size %zu, capacity %zu\n",
-			b__()->size, b__()->capacity);
-	stack_print(a__());
-	stack_print(b__());
-}
-

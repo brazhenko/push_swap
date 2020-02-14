@@ -6,7 +6,7 @@
 /*   By: a17641238 <a17641238@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/14 11:41:16 by a17641238         #+#    #+#             */
-/*   Updated: 2020/02/14 17:41:23 by lreznak-         ###   ########.fr       */
+/*   Updated: 2020/02/14 18:38:18 by lreznak-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,8 @@
 #define NUL '\0'
 
 /*
- * stack ctor
- */
+** stack ctor
+*/
 
 t_pstack		*init_stack(void)
 {
@@ -36,8 +36,8 @@ t_pstack		*init_stack(void)
 
 
 /*
- * t_pstack *stack must be malloced before being freed
- */
+** t_pstack *stack must be malloced before being freed
+*/
 
 void 			destroy_stack(t_pstack *stack)
 {
@@ -156,20 +156,6 @@ int 	stack_rev_rot(t_pstack *stack)
 		return (PS_OK);
 	}
 	return (PS_STACK_EMPTY);
-}
-
-void	stack_print(t_pstack *stack)
-{
-	size_t		i;
-
-	i = 0;
-	printf("|> ");
-	while (i <  stack->size)
-	{
-		printf("%6d ", stack->stack[i]);
-		i++;
-	}
-	printf("\n");
 }
 
 int		is_there_(t_pstack *stack, PSTACK_TYPE el)

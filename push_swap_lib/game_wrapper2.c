@@ -6,7 +6,7 @@
 /*   By: a17641238 <a17641238@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/14 11:40:48 by a17641238         #+#    #+#             */
-/*   Updated: 2020/02/14 17:26:50 by lreznak-         ###   ########.fr       */
+/*   Updated: 2020/02/14 18:25:52 by lreznak-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,12 +17,12 @@ void		sa(void)
 	stack_swap_2_top_elements(a__());
 }
 
-void 		sb(void)
+void		sb(void)
 {
 	stack_swap_2_top_elements(b__());
 }
 
-void 		ss(void)
+void		ss(void)
 {
 	sa();
 	sb();
@@ -36,10 +36,9 @@ void		pa(void)
 	{
 		stack_push(a__(), tmp);
 	}
-
 }
 
-void 		pb(void)
+void		pb(void)
 {
 	PSTACK_TYPE		tmp;
 
@@ -48,4 +47,3 @@ void 		pb(void)
 		stack_push(b__(), tmp);
 	}
 }
-

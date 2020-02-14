@@ -6,14 +6,11 @@
 /*   By: a17641238 <a17641238@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/14 11:41:49 by a17641238         #+#    #+#             */
-/*   Updated: 2020/02/14 11:41:49 by a17641238        ###   ########.fr       */
+/*   Updated: 2020/02/14 18:44:25 by lreznak-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stddef.h>
-
-# define FT_ULONG_MAX	((unsigned long)(~0L))
-# define FT_LONG_MAX	((long)(FT_ULONG_MAX >> 1))
 
 int		ft_isspace(int c)
 {
@@ -38,7 +35,7 @@ int		ft_atoi(const char *str)
 	int				sign;
 
 	result = 0;
-	border = (unsigned long)(FT_LONG_MAX / 10);
+	border = (unsigned long)(((long)((unsigned long)(~0L) >> 1)) / 10);
 	i = 0;
 	while (ft_isspace(str[i]))
 		i++;

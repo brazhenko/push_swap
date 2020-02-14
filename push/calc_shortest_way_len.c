@@ -18,7 +18,7 @@
 #define A_UP_B_DOWN		2
 #define A_DOWN_B_UP		3
 
-static void a_up_b_down(size_t *arr)
+static void	a_up_b_down(size_t *arr)
 {
 	arr[4] = arr[0] + arr[3];
 	arr[5] = A_UP_B_DOWN;
@@ -26,7 +26,7 @@ static void a_up_b_down(size_t *arr)
 	arr[7] = arr[3];
 }
 
-static void a_down_b_up(size_t *arr)
+static void	a_down_b_up(size_t *arr)
 {
 	arr[4] = arr[2] + arr[1];
 	arr[5] = A_DOWN_B_UP;
@@ -34,7 +34,7 @@ static void a_down_b_up(size_t *arr)
 	arr[7] = arr[2];
 }
 
-static void a_up_b_up(size_t *arr)
+static void	a_up_b_up(size_t *arr)
 {
 	arr[4] = max(arr[0], arr[2]);
 	arr[5] = A_UP_B_UP;
@@ -42,7 +42,7 @@ static void a_up_b_up(size_t *arr)
 	arr[7] = arr[2];
 }
 
-static void a_down_b_down(size_t *arr)
+static void	a_down_b_down(size_t *arr)
 {
 	arr[4] = max(arr[1], arr[3]);
 	arr[5] = A_DOWN_B_DOWN;

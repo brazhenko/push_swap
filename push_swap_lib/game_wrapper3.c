@@ -22,24 +22,18 @@ void		rb(void)
 	stack_rot(b__());
 }
 
-void 		rr(void)
+void		rr(void)
 {
 	ra();
 	rb();
 }
 
-void 		rra(void)
+void		rra(void)
 {
 	stack_rev_rot(a__());
 }
 
-void 		rrb(void)
+void		rrb(void)
 {
 	stack_rev_rot(b__());
-}
-
-void 		rrr(void)
-{
-	rra();
-	rrb();
 }

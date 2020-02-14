@@ -1,24 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   game_wrapper6.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: a17641238 <a17641238@student.42.fr>        +#+  +:+       +#+        */
+/*   By: lreznak- <lreznak-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/02/14 11:40:08 by a17641238         #+#    #+#             */
-/*   Updated: 2020/02/14 11:40:08 by a17641238        ###   ########.fr       */
+/*   Created: 2020/02/14 18:40:29 by lreznak-          #+#    #+#             */
+/*   Updated: 2020/02/14 18:40:37 by lreznak-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../push_swap_lib/pstack.h"
-#include "sorter.h"
+#include <zconf.h>
+#include "pstack.h"
 
-int		main(int ac, char **av)
+void		rrr_(void)
 {
-	if (ac > 1)
-	{
-		parse_argv(ac, av);
-		sort();
-		kill();
-	}
+	rrr();
+	write(1, "rrr\n", 4);
+}
+
+void		rrr(void)
+{
+	rra();
+	rrb();
 }

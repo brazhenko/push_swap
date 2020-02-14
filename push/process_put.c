@@ -17,7 +17,7 @@
 #define A_UP_B_DOWN		2
 #define A_DOWN_B_UP		3
 
-static void a_up_b_up(size_t *arr)
+static void	a_up_b_up(size_t *arr)
 {
 	while (arr[6] && arr[7])
 	{
@@ -37,7 +37,7 @@ static void a_up_b_up(size_t *arr)
 	}
 }
 
-static void a_down_b_down(size_t *arr)
+static void	a_down_b_down(size_t *arr)
 {
 	while (arr[6] && arr[7])
 	{
@@ -57,7 +57,7 @@ static void a_down_b_down(size_t *arr)
 	}
 }
 
-static void a_down_b_up(size_t *arr)
+static void	a_down_b_up(size_t *arr)
 {
 	while (arr[6])
 	{
@@ -71,7 +71,7 @@ static void a_down_b_up(size_t *arr)
 	}
 }
 
-static void a_up_b_down(size_t *arr)
+static void	a_up_b_down(size_t *arr)
 {
 	while (arr[6])
 	{

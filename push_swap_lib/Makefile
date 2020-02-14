@@ -3,7 +3,7 @@ FLAGS		= -Wall -Wextra -Werror -pedantic -g
 CC			= clang
 
 CC=gcc
-CFLAGS=-c -Wall -Wextra -Werror -I ../utilities_lib
+CFLAGS=-c -Wall -Wextra -Werror -pedantic -I ../utilities_lib
 LDFLAGS=
 SOURCES=error.c \
         game_wrapper.c \
@@ -11,6 +11,7 @@ SOURCES=error.c \
         game_wrapper3.c \
         game_wrapper4.c \
         game_wrapper5.c \
+        game_wrapper6.c \
         parse_argv.c \
         pstack.c \
 

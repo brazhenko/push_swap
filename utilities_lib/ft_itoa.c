@@ -27,7 +27,7 @@ int			ft_numlen(int n, int minus)
 	return (numlen + minus);
 }
 
-char			*ft_itoa(int n)
+char		*ft_itoa(int n)
 {
 	char	*str;
 	int		numlen;

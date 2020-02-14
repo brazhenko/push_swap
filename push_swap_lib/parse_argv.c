@@ -6,7 +6,7 @@
 /*   By: a17641238 <a17641238@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/14 11:41:10 by a17641238         #+#    #+#             */
-/*   Updated: 2020/02/14 17:26:50 by lreznak-         ###   ########.fr       */
+/*   Updated: 2020/02/14 18:14:19 by lreznak-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,11 @@
 #include "pstack.h"
 #include <stdlib.h>
 
-int 	valid(char *arg, int *num)
+int		valid(char *arg, int *num)
 {
-	int 	tmp;
+	int		tmp;
 	char	*tmp_s;
+
 	tmp = ft_atoi(arg);
 	tmp_s = ft_itoa(tmp);
 	if (ft_strcmp(tmp_s, arg) == 0 && !is_there_(a__(), tmp))
@@ -31,11 +32,11 @@ int 	valid(char *arg, int *num)
 	return (FALSE);
 }
 
-void 	parse_arg(char *arg)
+void	parse_arg(char *arg)
 {
 	char		**nums;
 	size_t		i;
-	int 		num;
+	int			num;
 
 	nums = strsplitcharset(arg, " \n\t\v\r\f");
 	if (nums)

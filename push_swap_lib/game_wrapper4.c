@@ -42,4 +42,3 @@ void		pb_(void)
 	pb();
 	write(1, "pb\n", 3);
 }
-

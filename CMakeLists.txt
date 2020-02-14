@@ -13,7 +13,7 @@ set(PUSH_SWAP_LIB_SRC
 		push_swap_lib/error.c
 		utilities_lib/memcpy.c
 		push_swap_lib/game_wrapper5.c
-		)
+		push_swap_lib/game_wrapper6.c)
 
 set(PUSH_SWAP_LIB_HEAD
 		push_swap_lib/pstack.h

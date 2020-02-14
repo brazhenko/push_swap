@@ -28,7 +28,7 @@ size_t		find_min_id_in_a(void)
 	return (min_id);
 }
 
-void	pop_up_from_a(size_t num)
+void		pop_up_from_a(size_t num)
 {
 	PSTACK_TYPE		el;
 
@@ -75,7 +75,7 @@ size_t		find_the_ok_place_in_a(PSTACK_TYPE val)
 	return (find_min_id_in_a());
 }
 
-void		normalize()
+void		normalize(void)
 {
 	size_t		i;
 

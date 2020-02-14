@@ -1,0 +1,39 @@
+Norme: ./push_swap_lib/Makefile
+Warning: Not a valid file
+Norme: ./utilities_lib/Makefile
+Warning: Not a valid file
+Norme: ./check/checker.h
+Norme: ./check/error.c
+Norme: ./push/fill_one.c
+Norme: ./push/main.c
+Norme: ./check/main.c
+Norme: ./push/accessories.c
+Norme: ./push/calc_shortest_way_len.c
+Norme: ./push_swap_lib/error.c
+Norme: ./push/sorter.h
+Norme: ./push/process_put.c
+Norme: ./push_swap_lib/game_wrapper2.c
+Norme: ./push_swap_lib/game_wrapper3.c
+Norme: ./push_swap_lib/game_wrapper4.c
+Norme: ./push_swap_lib/game_wrapper5.c
+Norme: ./push_swap_lib/game_wrapper.c
+Norme: ./push_swap_lib/pstack.c
+Warning: /Users/lreznak-/Documents/push_swap/push_swap_lib/pstack.c may not compile or is invalid for some reasons.
+Norme: ./push_swap_lib/parse_argv.c
+Norme: ./utilities_lib/charptrptrdel.c
+Norme: ./push_swap_lib/pstack.h
+Norme: ./push/sort.c
+Norme: ./push_swap_lib/game_wrapper6.c
+Norme: ./utilities_lib/max.c
+Norme: ./utilities_lib/memcpy.c
+Norme: ./utilities_lib/memset.c
+Norme: ./utilities_lib/ft_itoa.c
+Norme: ./utilities_lib/strcmp.c
+Norme: ./utilities_lib/strncpy.c
+Norme: ./utilities_lib/strncmp.c
+Norme: ./utilities_lib/ft_atoi.c
+Norme: ./utilities_lib/strsub.c
+Norme: ./utilities_lib/xmalloc.c
+Norme: ./utilities_lib/strnew.c
+Norme: ./utilities_lib/utilities.h
+Norme: ./utilities_lib/strsplitchrset.c
