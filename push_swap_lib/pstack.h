@@ -21,6 +21,9 @@
 # define PS_STACK_EMPTY			2
 # define PS_STACK_NULLPTR		3
 
+# define PUSH_SWAP_COMMAND_COUNT	11
+# define MAX_OPER_LEN				4
+
 typedef struct	s_pstack t_pstack;
 
 struct	s_pstack

@@ -36,7 +36,7 @@ allcl: all clean
 
 clean:
 	@rm -rf $(OBJECTS)
-	@echo "Object files removed"
+	@echo $(LIBNAME) "object files removed"
 
 fclean: clean
 	@rm  -f ${LIBNAME}
